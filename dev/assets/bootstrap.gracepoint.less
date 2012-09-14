@@ -1,0 +1,502 @@
+/*!
+ * Bootstrap v2.1.0
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "../less/reset.less";
+
+// Core variables and mixins
+@import "../less/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "../less/mixins.less";
+
+// Grid system and page structure
+@import "../less/scaffolding.less";
+@import "../less/grid.less";
+@import "../less/layouts.less";
+
+// Base CSS
+@import "../less/type.less";
+@import "../less/code.less";
+@import "../less/forms.less";
+@import "../less/tables.less";
+
+// Components: common
+@import "../less/sprites.less";
+@import "../less/dropdowns.less";
+@import "../less/wells.less";
+@import "../less/component-animations.less";
+@import "../less/close.less";
+
+// Components: Buttons & Alerts
+@import "../less/buttons.less";
+@import "../less/button-groups.less";
+@import "../less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "../less/navs.less";
+@import "../less/navbar.less";
+@import "../less/breadcrumbs.less";
+@import "../less/pagination.less";
+@import "../less/pager.less";
+
+// Components: Popovers
+@import "../less/modals.less";
+@import "../less/tooltip.less";
+@import "../less/popovers.less";
+
+// Components: Misc
+@import "../less/thumbnails.less";
+@import "../less/labels-badges.less";
+@import "../less/progress-bars.less";
+@import "../less/accordion.less";
+@import "../less/carousel.less";
+@import "../less/hero-unit.less";
+
+// Utility classes
+@import "../less/responsive.less"; // Added in
+@import "../less/utilities.less"; // Has to be last to override when necessary
+
+// ====================================================================================================
+// GLOBALS
+// ====================================================================================================
+
+@maxwidth: 1020px;
+@bg: #daf6ff;			// TODO: need to get the noise pattern from photoshop
+
+h1 {}
+h2 { font-size: 48px; }
+h3 { font-size: 36px; text-transform: uppercase; margin-bottom: 20px; margin-top: 20px; }
+h4 { font-size: 30px; }
+
+.font-small {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+body { 
+	background: @bg;
+} 
+
+small {
+	.font-small;
+	color: @grayLight;
+}
+
+.carousel {
+	margin-bottom: 0; 
+
+	.carousel-control { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+}
+
+
+#outer {
+	margin: 0 auto;
+	background: @bodyBackground;
+}
+
+#footer {
+	background: #eee;				// TODO: need to get bg pattern from photoshop
+	margin-top: 20px;
+	padding: 40px 0;
+
+	footer { 
+		.font-small;
+	}	
+}
+
+// ====================================================================================================
+// HEADER
+// ====================================================================================================
+
+#height-restriction {
+	height: 100px;
+}
+
+#gp-smallLogo {
+	background: url('../img/logo-gracepointriverside.png') no-repeat;
+	height: 100px;
+}
+
+#home #nav-bar #border { border-bottom-width: 0; }
+
+#about #nav-bar {
+	.highlight a {
+		border-bottom: 3px solid #EE9F74;
+		color: #EE9F74;
+	}
+}
+
+#time-location #nav-bar {
+	.highlight a {
+		border-bottom: 3px solid #5EA5E0;
+		color: #5EA5E0;
+	}
+}
+
+#events #nav-bar {
+	.highlight a {
+		border-bottom: 3px solid #65BE2A;
+		color: #65BE2A;
+	}
+	
+	#border {
+		border-bottom: 1px solid #bbb; 	
+	}
+}
+
+#nav-bar {
+	margin-top: 29px;
+
+	.span12 {
+		height: 55px;
+	}
+	
+	.highlight a {
+		padding-bottom: 12px;
+	}
+	
+	#border {
+		border-bottom: 1px solid #ddd; 	
+	}	
+}
+
+.navLinks {
+	list-style: none;
+	margin: 16px 0px 0px 0px;
+	font-size: 24px;
+	font-family: sans-serif;
+
+	a {
+		color: #000;
+		
+		&:hover { text-decoration: none; }
+	}
+}
+
+#locate {
+	margin: 0px 50px;
+}
+
+// ====================================================================================================
+// HOMEPAGE-SPECIFIC
+// ====================================================================================================
+
+#home {
+	h2 { 
+		text-align: center;
+		margin: 40px auto;
+	}
+
+	p.lead {
+		.content-columns(2);
+	}
+}
+
+// ====================================================================================================
+// RESPONSIVE LAYOUTS
+// ====================================================================================================
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px) {
+
+}
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+@media (max-width: 767px) {	
+
+	#outer {
+		width: 100%;
+		border: none;
+	}
+
+	#main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#footer {
+		padding-left: 20px;
+		padding-right: 20px;		
+	}
+
+	#home {
+		p.lead {
+			.content-columns(1);
+		}
+		
+		img { max-width: 100%; }
+	}
+	
+}
+
+// PORTRAIT TABLET TO LANDSCAPE TABLET
+// -----------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+// DEFAULT DESKTOP
+// ---------------
+@media (min-width: 980px) {
+	#outer {
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		width: @maxwidth;
+	}
+}
+
+// Begin Gary's Code 
+// Abe: need to clean this up!
+
+/* Variables */
+@address-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A3EFFB;
+@date-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #B3E5A4;
+@events-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #BFBFBF;
+@learn-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A0A6A0;
+@contact-shadow: 0px 2px 2px 0px #c0c0c0;
+
+a.button {
+	height: 140px;
+	.border-radius(5px);
+	border: 1px solid #666;
+	display: block;
+	
+	&:hover {
+		text-decoration: none;
+	}
+	
+	p { 
+		padding-top: 54px; 
+		color: #fff;
+		font-size: 36px;
+		text-shadow: 0px 2px 2px #000;
+		text-align: center;
+	}
+}
+
+.subtext {
+	margin-top: 10px;
+	
+	p {
+		font-size: 18px;
+		color: #999;
+		margin-left: 35px;	
+	}
+}
+
+#date {
+	.button {
+		border: 1px solid #84A65E;
+
+		#clock {	
+			height: 100%;
+			background: url('../img/home-bg-clock.png') center center no-repeat;
+		}
+
+		#gradient {
+			height: 100%;
+			.box-shadow(@date-shadow); 
+			.gradientBar(#8FD877, #49B23D);
+		}
+	}
+	.subtext {
+		background: url('../img/home-calendar.png') no-repeat;
+		p { margin-left: 20px; }
+	}
+}
+
+#address {
+	.button {
+		border: 1px solid #00507C; 
+		background: url('../img/home-bg-map.jpg') no-repeat -155px -22px;
+		.box-shadow(@address-shadow);
+
+		p {
+			padding-top: 42px;
+			font-size: 22px;
+		}
+	}
+	.subtext {
+		background: url('../img/home-car.png') no-repeat 0px 4px;
+		p { margin-left: 45px; }
+	}
+}
+
+#events {
+	.button {
+		border: 1px solid #B36A2A;
+		background: url('../img/home-bg-events.jpg') no-repeat -14px -34px;
+		.box-shadow(@events-shadow);
+	}
+	.subtext {
+		background: url('../img/home-photos.png') no-repeat;
+	}
+}
+
+#learn {
+	margin-top: 22px;
+	.button {
+		border: 1px solid #666;
+		background: url('../img/home-bg-about.jpg') no-repeat -25px -53px;
+		.box-shadow(@learn-shadow);
+
+		p {
+			padding-top: 58px;
+		}
+	}
+	.subtext {
+		background: url('../img/home-people.png') no-repeat;
+		p { margin-left: 45px; }
+	}
+}
+
+#contact {
+	margin-top: 22px;
+
+	.button {
+		border: 1px solid #aaa;
+		background: url('../img/home-bg-newsletter.png') top left repeat-x, 
+					url('../img/home-bg-contactus-beige.jpg') top left repeat-x;
+		.box-shadow(@contact-shadow);
+
+		#stamp {
+			margin: 15px 10px;
+			background: url('../img/home-stamp.png') top right no-repeat;
+		}
+ 		p {
+			padding-top: 43px;
+		}
+	}
+	.subtext {
+		background: url('../img/home-mail.png') no-repeat;
+	}
+}
+	
+#gp-biglogo {
+	background: url('../img/logo-gracepointriverside-big.png') center center no-repeat;
+	height: 130px;
+	margin: 50px 0px 20px 0px;
+}
+
+ 
+//End of Gary's Code
+
+// ====================================================================================================
+// TIME + LOCATION PAGE
+// ====================================================================================================
+
+#time-location {
+	
+	.info {
+		div { 
+			font-size: 30px; 
+			
+			div { 
+				padding: 7px 7px 7px 40px;
+				background-repeat: no-repeat;
+				background-position: left center;
+				
+				&#date { background-image: url('../img/time-calendar.png'); }
+				&#time { background-image: url('../img/time-clock.png'); padding-left: 50px; }
+				&#location { background-image: url('../img/time-location.png'); }
+			}
+		}		
+	}
+	
+	#map {
+		height: 460px;
+		margin-top: 20px;
+		margin-bottom: 20px; 
+		border: 1px solid #999;
+/* 		.border-radius(5px); */
+	}
+	
+	ul.rides {
+		margin-left: 0;
+		
+		li { 
+			font-size: 24px;
+			height: 45px;
+			padding-left: 30px;
+			margin-bottom: 10px;
+			background: url('../img/time-location.png') left top no-repeat;
+			list-style-image: none;
+			list-style-type: none;
+			
+			small { display: block; }
+		}
+	}
+	
+	#ridesmap_container { 
+		position: relative; 
+		
+		#fog {
+			position: absolute;
+			top: 0;
+			left: 20px;
+			z-index: 500;
+		}
+		
+		#rides_map {
+			height: 500px;
+		}
+
+	}
+	
+	.video { margin-top: 20px; }
+	
+	.leaflet-control-attribution { display: none; }
+
+}
+
+// ====================================================================================================
+// EVENTS PAGE
+// ====================================================================================================
+
+
+#events {
+	
+	#outer {
+		background: @bg;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	
+	h3, p.lead, footer {
+		color: #666;
+/* 		text-shadow: 0 1px 0 #fff, 0 -1px 0 #333; */
+		text-shadow: 0 1px 0 #fff;
+	}
+
+	.event {
+		margin-bottom: 50px;
+		.box-shadow(0px 1px 2px rgba(51,51,51,0.25));
+		.border-radius(5px);
+		background-color: #fff;
+		
+		img { .border-radius(5px 5px 0px 0px); }
+	
+		.info {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			
+			.date { text-align: right; padding-top: 7px; font-family: @sansFontFamily; }
+			.blurb { padding-top: 30px; }
+		}
+	}
+	
+	#footer {
+		background: @bg;
+		padding-top: 0;
+	}
+
+
+}
