@@ -72,9 +72,8 @@
 					</div>
 				</div>
 				
-				<!-- todo: need to prepare email -->
 				<div id="contact" class="span6">
-					<a href="mailto:needemailhere" class="button">
+					<a href="mailto:<?php echo $CONTACT_EMAIL; ?>" class="button">
 						<div id="stamp">
 							<p>Contact Us</p>
 						</div>	

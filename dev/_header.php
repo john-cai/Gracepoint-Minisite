@@ -38,17 +38,11 @@
 									</a>	
 								</div>
 								
-								<div class="span7 offset2">
+								<div class="span9">
 									<div class="navLinks">
-										<span class="<?php if ($PAGE_ID == 'about') echo 'highlight'; ?>">
-											<a href="about.php">About Us</a>
-										</span>
-										<span class="<?php if ($PAGE_ID == 'time-location') echo 'highlight'; ?>">
-											<a id="locate" href="time-location.php">Time &amp; Location</a>
-										</span>
-										<span class="<?php if ($PAGE_ID == 'events') echo 'highlight'; ?>">
-											<a href="events.php">Recent Events</a>
-										</span>	
+										<a id="nav-about" href="about.php">About Us</a>
+										<a id="nav-time-location" href="time-location.php">Time &amp; Location</a>
+										<a id="nav-events" href="events.php">Recent Events</a>
 									</div>	
 								</div>
 
