@@ -59,7 +59,7 @@
 @import "../less/hero-unit.less";
 
 // Utility classes
-@import "../less/responsive.less"; // Added in
+// @import "../less/responsive.less"; // Added in
 @import "../less/utilities.less"; // Has to be last to override when necessary
 
 // ====================================================================================================
@@ -88,12 +88,16 @@ small {
 	color: @grayLight;
 }
 
+.alert strong {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
 .carousel {
 	margin-bottom: 0; 
 
 	.carousel-control { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 }
-
 
 #outer {
 	margin: 0 auto;
@@ -210,6 +214,7 @@ small {
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
+/*
 @media (max-width: 767px) {	
 
 	#outer {
@@ -236,6 +241,7 @@ small {
 	}
 	
 }
+*/
 
 // PORTRAIT TABLET TO LANDSCAPE TABLET
 // -----------------------------------
@@ -416,7 +422,6 @@ a.button {
 		margin-top: 20px;
 		margin-bottom: 20px; 
 		border: 1px solid #999;
-/* 		.border-radius(5px); */
 	}
 	
 	ul.rides {
