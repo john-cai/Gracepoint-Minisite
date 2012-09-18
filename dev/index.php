@@ -64,7 +64,7 @@
 				</div>					
 
 				<div id="learn" class="span6">
-					<a href="about.php" class="button">
+					<a href="aboutus.php" class="button">
 						<p>Learn More About Us</p>
 					</a>
 					<div class="subtext">

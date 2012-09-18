@@ -19,32 +19,50 @@
 			</div>
 			
 			<div class="row">
-				<div id="map" class="span12"></div>
+				<div id="map" class="map span12"></div>
 			</div>
+			
+			<form>
+				<div class="row">
+					<div class="span9"><input type="text" class="span9" placeholder="Enter your starting address"></div>
+<!-- 					<input type="text" class="span3" placeholder="Enter your starting address"> -->
+					<div class="span3"><button type="button" class="btn btn-primary btn-block">Get Directions</button></div>
+				</div>
+			</form>
+			
+			<div class="breaker"></div>
 
 			<div class="row">
-				<div class="span5"> 
+				<div class="span8"> 
 					<h3>Need a Ride?</h3>
-					<p class="lead">We've got you covered! All rides will be leaving at <strong><?php echo $RIDES_TIME; ?></strong> from these locations:</p>
-					
-					<?php
-						$list = '';
-						foreach($USE_RIDES_ARRAY as $index) {
-							$list .= '<li><a href="#">' . $RIDES[$index]['location'] . '</a><small>' . $RIDES[$index]['desc'] . '</small></li>';
-						}
-					?>
-					
-					<ul class="rides">
-						<?php echo $list; ?>
-					</ul>
+					<p class="lead">We've got you covered! All rides will be leaving at <span class="label label-warning"><?php echo $RIDES_TIME; ?></span> from these locations:</p>
 				</div>
 				
-				<div id="ridesmap_container" class="span7">
-					<img id="fog" src="img/time-fog.png" width="545" height="500" />
-					<div id="rides_map" class="span7"></div>
+				<div class="span4">
+					<div class="video">
+						<iframe src="http://player.vimeo.com/video/29915285?title=0&amp;byline=0&amp;portrait=0" width="500" height="275" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
 				</div>
 			</div>
 			
+			<div class="row">
+				<?php
+					$list = '';
+					foreach($USE_RIDES_ARRAY as $index) {
+						$list .= '<li class="span3"><span><a href="#">' . $RIDES[$index]['location'] . '</a><small>' . $RIDES[$index]['desc'] . '</small></span></li>';
+					}
+				?>
+				
+				<ul class="rides">
+					<?php echo $list; ?>
+				</ul>
+
+
+				<div id="rides_map" class="map span12"></div>
+
+			</div>
+			
+<!--
 			<div class="row">
 				<div class="span12">
 					<div class="video">
@@ -52,6 +70,7 @@
 					</div>
 				</div>
 			</div>
+-->
 
 		</div> <!-- /.container -->
 

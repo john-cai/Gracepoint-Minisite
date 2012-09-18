@@ -88,9 +88,13 @@ small {
 	color: @grayLight;
 }
 
-.alert strong {
-	font-weight: normal;
-	text-transform: uppercase;
+.alert {
+	margin-top: 20px;
+
+	strong {
+		font-weight: normal;
+		text-transform: uppercase;
+	}
 }
 
 .carousel {
@@ -102,6 +106,12 @@ small {
 #outer {
 	margin: 0 auto;
 	background: @bodyBackground;
+}
+
+.breaker {
+	height: 7px;
+	margin-bottom: 20px;
+	background: #eee url(../img/time-stripes.gif) top left repeat;
 }
 
 #footer {
@@ -429,43 +439,49 @@ small {
 		}		
 	}
 	
-	#map {
-		height: 460px;
-		margin-top: 20px;
-		margin-bottom: 20px; 
+	.map {
 		border: 1px solid #999;
+
+		img { max-width: none; }
+/* 		.gmnoprint { display: none; } */
+		
+		&#map {
+			height: 400px;
+			margin-top: 20px;
+			margin-bottom: 20px; 
+		}
+
+		&#rides_map {
+			height: 350px;
+		}	
 	}
+	
+	.label { font-size: 21px; }
 	
 	ul.rides {
 		margin-left: 0;
+		margin-top: 20px;
 		
-		li { 
-			font-size: 24px;
-			height: 45px;
-			padding-left: 30px;
-			margin-bottom: 10px;
-			background: url('../img/time-location.png') left top no-repeat;
+		li {
 			list-style-image: none;
 			list-style-type: none;
+			background: url('../img/time-location.png') left top no-repeat;
+
+			span { 
+				font-size: 18px;
+				height: 45px;
+				padding-left: 30px;
+				margin-bottom: 5px;
+			}
 			
-			small { display: block; }
+			small { display: block; padding-left: 30px; }
 		}
 	}
 	
-	#ridesmap_container { 
-		position: relative; 
-		
-		#fog {
-			position: absolute;
-			top: 0;
-			left: 20px;
-			z-index: 500;
-		}
-		
-		#rides_map {
-			height: 500px;
-		}
-
+	.btn-block { 
+		display: block; 
+		width: 100%;
+		.border-radius(20px);
 	}
 	
 	.video { margin-top: 20px; }
@@ -516,4 +532,79 @@ small {
 	}
 
 
+}
+
+// ====================================================================================================
+// ABOUT US PAGE
+// ====================================================================================================
+
+#about {
+
+	#video-section {
+		p {
+		color: #B6B6B6;
+		text-align: center;
+		font-size: 23px;
+		margin: 38px 0;
+		}
+	}
+	
+	#ribbon {
+		height: 80px;
+		background: url('../img/about-bg-ribbon.jpg') repeat-x;
+		/*NOTE THERE IS A SHADOW */
+		p {
+			text-align:center;
+		}
+	}
+	
+	#carousel-banner {
+		height: 475px;
+		background: #DDD;
+	}
+	
+	#who-we-are-content {
+		background: #C6C6C6;
+		height: 100px;
+		p {
+			font-size: 24px;
+			margin: 15px 0;
+		}
+	}
+	
+	.what-to-expect {
+		background: #999999;
+	/*	position: relative;*/
+		border-top: 2px solid #e5e5e5;
+	/*	#expect-shadow {
+			background: url('../img/about-shadow.png');
+			height: 61px;
+			position: relative;
+			top: 400px;
+		}*/
+	}
+	
+	.joinus {
+		background: url('../img/about-bg-wood.jpg');
+		height: 600px;
+		position: relative;
+		#expect-shadow {
+			background: url('../img/about-shadow.png');
+			height: 61px;
+			position: relative;
+			top: 0px;
+		}
+		#innerimage {
+			height: 400px;
+			width: 881px;
+			border: 10px solid #fff;
+			background: #ACACAC;
+			position: relative;
+			top: 50px;
+			left: 60px;
+		}
+		p {
+			text-align:center;
+		}
+	}
 }

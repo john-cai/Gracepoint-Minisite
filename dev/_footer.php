@@ -20,7 +20,10 @@
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
-	<script src="js/leaflet.js" type="text/javascript"></script>
+	<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAKgayMmKfoK-f_-6QB1TVsS1OTQqZPkfM&sensor=false">
+    </script>
+	
 	<script type="text/javascript">
 		less.env = "development";
 		
@@ -29,39 +32,90 @@
 			$('.carousel').carousel();
 			
 			<?php if ($PAGE_ID == 'time-location') { ?>
-			var leaflet_api = '8ee2a50541944fb9bcedded5165f09d9';
 
+			// map info
+			var loc = <?php echo json_encode($LOCATION[$USE_LOCATION_INDEX]); ?>;
+			
+			var mapOptions = {
+				zoom: 16,
+				center: new google.maps.LatLng(loc.lat, loc.long),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			
 			// #map
-			var latitude = <?php echo $LOCATION[$USE_LOCATION_INDEX]['lat']; ?>;
-			var longitude = <?php echo $LOCATION[$USE_LOCATION_INDEX]['long']; ?>;
-			var name = '<?php echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?>';
-			var line1 = '<?php echo $LOCATION[$USE_LOCATION_INDEX]['line1']; ?>';
-			var line2 = '<?php echo $LOCATION[$USE_LOCATION_INDEX]['line2']; ?>';
+			// creating custom markers: 
+			// http://stackoverflow.com/questions/7095574/google-maps-api-3-custom-marker-color-for-default-dot-marker
+			// https://developers.google.com/chart/infographics/docs/dynamic_icons#pins
+			var markerUrl = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=';
+			var markerColor = '4295db|ffffff';
 
-			var map = L.map('map').setView([latitude, longitude], 14);
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 			
-			// add a CloudMade tile layer with style #997
-			L.tileLayer('http://{s}.tile.cloudmade.com/' + leaflet_api + '/997/256/{z}/{x}/{y}.png', {
-				attribution: '',
-				maxZoom: 18
-			}).addTo(map);
+			var pinImage = new google.maps.MarkerImage(markerUrl + '%E2%80%A2|' + markerColor,
+		        new google.maps.Size(21, 34),
+		        new google.maps.Point(0,0),
+		        new google.maps.Point(10, 34)
+        	);
+        	var pinShadow = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_shadow",
+		        new google.maps.Size(40, 37),
+		        new google.maps.Point(0, 0),
+		        new google.maps.Point(12, 35)
+        	);
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(loc.lat, loc.long),
+				map: map,
+                icon: pinImage,
+                shadow: pinShadow
+			});
 			
-			// add a marker in the given location, attach some popup content to it and open the popup
-			L.marker([latitude, longitude]).addTo(map).bindPopup(name + '<br />' + line1 + '<br />' + line2).openPopup();
+			var infowindow = new google.maps.InfoWindow({
+			    content: loc.name + '<br />' + loc.line1 + '<br />' + loc.line2
+			});
+			
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map,marker);
+			});
 			
 			// #rides_map
-			var rides_map = L.map('rides_map').setView([latitude, longitude], 14);
 			
-			L.tileLayer('http://{s}.tile.cloudmade.com/' + leaflet_api + '/997/256/{z}/{x}/{y}.png', {
-				attribution: '',
-				maxZoom: 18
-			}).addTo(rides_map);
+			var ridesColor = 'fa925e|ffffff';
 			
-			// markers
-			L.marker([latitude, longitude]).addTo(rides_map).bindPopup(name + '<br />' + line1 + '<br />' + line2).openPopup();
+			<?php
+				$i = 1;
+				foreach($USE_RIDES_ARRAY as $index) {
+					if ($i == 1) {
+						// display rides map
+			?>
 
-			<?php } ?>
+			var mapOptions = {
+				zoom: 15,
+				center: new google.maps.LatLng(<?php echo $RIDES[$index]['lat'] . ', ' . $RIDES[$index]['long']; ?>),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+
+			var rides_map = new google.maps.Map(document.getElementById("rides_map"), mapOptions);	
+
+			<?php	} // end if ($i == 1) ?>
+			
+			var pinImage = new google.maps.MarkerImage(markerUrl + '<?php echo $i++; ?>|' + ridesColor,
+		        new google.maps.Size(21, 34),
+		        new google.maps.Point(0,0),
+		        new google.maps.Point(10, 34)
+        	);
+        	var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(<?php echo $RIDES[$index]['lat'] . ', ' . $RIDES[$index]['long']; ?>),
+				map: rides_map,
+                icon: pinImage,
+                shadow: pinShadow
+			});
+
+			<?php	} // end foreach ?>
+			
+
+			<?php } // end if statement ?>
+
 		});
+
 	</script>
 	
 </body>

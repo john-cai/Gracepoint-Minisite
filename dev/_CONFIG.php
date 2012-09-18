@@ -5,7 +5,7 @@
 	// Things that might potentially change from week to week, quarter to quarter
 	// =================================================================================
 
-	$UPDATE_MSG = '';		// message will be flashed above every page if this isn't null
+	$UPDATE_MSG = 'For the next three weeks, we\'ll be meeting at MSE 104!';		// message will be flashed above every page if this isn't null
 
 	$USE_LOCATION_INDEX = 0;
 	$USE_RIDES_ARRAY = array(0, 1, 2, 3);
@@ -27,6 +27,7 @@
 	$CONTACT_EMAIL = 'info@gracepointriverside.org';
 	
 	// TIME + LOCATION
+	// http://itouchmap.com/latlong.html
 	// =================================================================================
 	
 	$LOCATION = array(
@@ -56,20 +57,20 @@
 		1 => array(
 			'location' => 'Lot 15',
 			'desc' => 'Between Pentland and the parking lot',
-			'lat' => 0,
-			'long' => 0
+			'lat' => 33.976847,
+			'long' => -117.323824
 		),
 		2 => array(
 			'location' => 'University Village',
 			'desc' => 'In front of Theatre',
-			'lat' => 0,
-			'long' => 0
+			'lat' => 33.976891,
+			'long' => -117.338072
 		),
 		3 => array(
 			'location' => 'Lot 26',
 			'desc' => '',
-			'lat' => 0,
-			'long' => 0
+			'lat' => 33.981242,
+			'long' => -117.331345
 		)
 	);
 
