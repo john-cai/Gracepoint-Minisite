@@ -59,7 +59,7 @@
 @import "../less/hero-unit.less";
 
 // Utility classes
-@import "../less/responsive.less"; // Added in
+// @import "../less/responsive.less"; // Added in
 @import "../less/utilities.less"; // Has to be last to override when necessary
 
 // ====================================================================================================
@@ -67,7 +67,7 @@
 // ====================================================================================================
 
 @maxwidth: 1020px;
-@bg: #daf6ff;			// TODO: need to get the noise pattern from photoshop
+@bg: #daf6ff url(../img/background.png) top left repeat;
 
 h1 {}
 h2 { font-size: 48px; }
@@ -88,12 +88,16 @@ small {
 	color: @grayLight;
 }
 
+.alert strong {
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
 .carousel {
 	margin-bottom: 0; 
 
 	.carousel-control { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 }
-
 
 #outer {
 	margin: 0 auto;
@@ -101,12 +105,14 @@ small {
 }
 
 #footer {
-	background: #eee;				// TODO: need to get bg pattern from photoshop
+	background: #eee url(../img/footer.jpg) top left repeat;
 	margin-top: 20px;
 	padding: 40px 0;
 
 	footer { 
-		.font-small;
+		.content-columns(3);
+		
+		p { .font-small; }
 	}	
 }
 
@@ -124,25 +130,28 @@ small {
 }
 
 #home #nav-bar #border { border-bottom-width: 0; }
+@about-color: #EE9F74;
+@time-color: #5EA5E0;
+@events-color: #65BE2A;
 
 #about #nav-bar {
-	.highlight a {
-		border-bottom: 3px solid #EE9F74;
-		color: #EE9F74;
+	a#nav-about {
+		border-bottom: 3px solid @about-color;
+		color: @about-color;
 	}
 }
 
 #time-location #nav-bar {
-	.highlight a {
-		border-bottom: 3px solid #5EA5E0;
-		color: #5EA5E0;
+	a#nav-time-location {
+		border-bottom: 3px solid @time-color;
+		color: @time-color;
 	}
 }
 
 #events #nav-bar {
-	.highlight a {
-		border-bottom: 3px solid #65BE2A;
-		color: #65BE2A;
+	a#nav-events {
+		border-bottom: 3px solid @events-color;
+		color: @events-color;
 	}
 	
 	#border {
@@ -157,7 +166,7 @@ small {
 		height: 55px;
 	}
 	
-	.highlight a {
+	a {
 		padding-bottom: 12px;
 	}
 	
@@ -170,12 +179,17 @@ small {
 	list-style: none;
 	margin: 16px 0px 0px 0px;
 	font-size: 24px;
-	font-family: sans-serif;
+	font-family: @sansFontFamily;
+	text-align: right;
 
 	a {
-		color: #000;
+		color: #222;
+		margin-left: 10px;
 		
 		&:hover { text-decoration: none; }
+		&#nav-about:hover { color: @about-color; }
+		&#nav-time-location:hover { color: @time-color; }
+		&#nav-events:hover { color: @events-color; }		
 	}
 }
 
@@ -187,6 +201,13 @@ small {
 // HOMEPAGE-SPECIFIC
 // ====================================================================================================
 
+/* Variables */
+@address-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A3EFFB;
+@date-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #B3E5A4;
+@events-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #BFBFBF;
+@learn-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A0A6A0;
+@contact-shadow: 0px 2px 2px 0px #c0c0c0;
+
 #home {
 	h2 { 
 		text-align: center;
@@ -196,6 +217,136 @@ small {
 	p.lead {
 		.content-columns(2);
 	}
+	
+	a.button {
+		height: 140px;
+		.border-radius(5px);
+		border: 1px solid #666;
+		display: block;
+		
+		&:hover {
+			text-decoration: none;
+		}
+		
+		p { 
+			padding-top: 54px; 
+			color: #fff;
+			font-size: 36px;
+			text-shadow: 0px 2px 2px #000;
+			text-align: center;
+		}
+	}
+	
+	.carousel-inner { 
+		height: 500px; 
+		
+		.item { top: -100px; }
+	}
+	
+	.subtext {
+		margin-top: 10px;
+		
+		p {
+			font-size: 18px;
+			color: #999;
+			margin-left: 35px;	
+		}
+	}
+	
+	#date {
+		.button {
+			border: 1px solid #84A65E;
+	
+			#clock {	
+				height: 100%;
+				background: url('../img/home-bg-clock.png') center center no-repeat;
+			}
+	
+			#gradient {
+				height: 100%;
+				.box-shadow(@date-shadow); 
+				.gradientBar(#8FD877, #49B23D);
+			}
+		}
+		.subtext {
+			background: url('../img/home-calendar.png') no-repeat;
+			p { margin-left: 20px; }
+		}
+	}
+	
+	#address {
+		.button {
+			border: 1px solid #00507C; 
+			background: url('../img/home-bg-map.jpg') no-repeat -155px -22px;
+			.box-shadow(@address-shadow);
+	
+			p {
+				padding-top: 42px;
+				font-size: 22px;
+			}
+		}
+		.subtext {
+			background: url('../img/home-car.png') no-repeat 0px 4px;
+			p { margin-left: 45px; }
+		}
+	}
+	
+	#events {
+		.button {
+			border: 1px solid #B36A2A;
+			background: url('../img/home-bg-events.jpg') no-repeat -14px -34px;
+			.box-shadow(@events-shadow);
+		}
+		.subtext {
+			background: url('../img/home-photos.png') no-repeat;
+		}
+	}
+	
+	#learn {
+		margin-top: 22px;
+		.button {
+			border: 1px solid #666;
+			background: url('../img/home-bg-about.jpg') no-repeat -25px -53px;
+			.box-shadow(@learn-shadow);
+	
+			p {
+				padding-top: 58px;
+			}
+		}
+		.subtext {
+			background: url('../img/home-people.png') no-repeat;
+			p { margin-left: 45px; }
+		}
+	}
+	
+	#contact {
+		margin-top: 22px;
+	
+		.button {
+			border: 1px solid #aaa;
+			background: url('../img/home-bg-newsletter.png') top left repeat-x, 
+						url('../img/home-bg-contactus-beige.jpg') top left repeat-x;
+			.box-shadow(@contact-shadow);
+	
+			#stamp {
+				margin: 15px 10px;
+				background: url('../img/home-stamp.png') top right no-repeat;
+			}
+	 		p {
+				padding-top: 43px;
+			}
+		}
+		.subtext {
+			background: url('../img/home-mail.png') no-repeat;
+		}
+	}
+		
+	#gp-biglogo {
+		background: url('../img/logo-gracepointriverside-big.png') center center no-repeat;
+		height: 130px;
+		margin: 50px 0px 20px 0px;
+	}
+
 }
 
 // ====================================================================================================
@@ -210,6 +361,7 @@ small {
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
+/*
 @media (max-width: 767px) {	
 
 	#outer {
@@ -236,6 +388,7 @@ small {
 	}
 	
 }
+*/
 
 // PORTRAIT TABLET TO LANDSCAPE TABLET
 // -----------------------------------
@@ -253,141 +406,6 @@ small {
 	}
 }
 
-// Begin Gary's Code 
-// Abe: need to clean this up!
-
-/* Variables */
-@address-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A3EFFB;
-@date-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #B3E5A4;
-@events-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #BFBFBF;
-@learn-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #A0A6A0;
-@contact-shadow: 0px 2px 2px 0px #c0c0c0;
-
-a.button {
-	height: 140px;
-	.border-radius(5px);
-	border: 1px solid #666;
-	display: block;
-	
-	&:hover {
-		text-decoration: none;
-	}
-	
-	p { 
-		padding-top: 54px; 
-		color: #fff;
-		font-size: 36px;
-		text-shadow: 0px 2px 2px #000;
-		text-align: center;
-	}
-}
-
-.subtext {
-	margin-top: 10px;
-	
-	p {
-		font-size: 18px;
-		color: #999;
-		margin-left: 35px;	
-	}
-}
-
-#date {
-	.button {
-		border: 1px solid #84A65E;
-
-		#clock {	
-			height: 100%;
-			background: url('../img/home-bg-clock.png') center center no-repeat;
-		}
-
-		#gradient {
-			height: 100%;
-			.box-shadow(@date-shadow); 
-			.gradientBar(#8FD877, #49B23D);
-		}
-	}
-	.subtext {
-		background: url('../img/home-calendar.png') no-repeat;
-		p { margin-left: 20px; }
-	}
-}
-
-#address {
-	.button {
-		border: 1px solid #00507C; 
-		background: url('../img/home-bg-map.jpg') no-repeat -155px -22px;
-		.box-shadow(@address-shadow);
-
-		p {
-			padding-top: 42px;
-			font-size: 22px;
-		}
-	}
-	.subtext {
-		background: url('../img/home-car.png') no-repeat 0px 4px;
-		p { margin-left: 45px; }
-	}
-}
-
-#events {
-	.button {
-		border: 1px solid #B36A2A;
-		background: url('../img/home-bg-events.jpg') no-repeat -14px -34px;
-		.box-shadow(@events-shadow);
-	}
-	.subtext {
-		background: url('../img/home-photos.png') no-repeat;
-	}
-}
-
-#learn {
-	margin-top: 22px;
-	.button {
-		border: 1px solid #666;
-		background: url('../img/home-bg-about.jpg') no-repeat -25px -53px;
-		.box-shadow(@learn-shadow);
-
-		p {
-			padding-top: 58px;
-		}
-	}
-	.subtext {
-		background: url('../img/home-people.png') no-repeat;
-		p { margin-left: 45px; }
-	}
-}
-
-#contact {
-	margin-top: 22px;
-
-	.button {
-		border: 1px solid #aaa;
-		background: url('../img/home-bg-newsletter.png') top left repeat-x, 
-					url('../img/home-bg-contactus-beige.jpg') top left repeat-x;
-		.box-shadow(@contact-shadow);
-
-		#stamp {
-			margin: 15px 10px;
-			background: url('../img/home-stamp.png') top right no-repeat;
-		}
- 		p {
-			padding-top: 43px;
-		}
-	}
-	.subtext {
-		background: url('../img/home-mail.png') no-repeat;
-	}
-}
-	
-#gp-biglogo {
-	background: url('../img/logo-gracepointriverside-big.png') center center no-repeat;
-	height: 130px;
-	margin: 50px 0px 20px 0px;
-}
-
- 
-//End of Gary's Code
 
 // ====================================================================================================
 // TIME + LOCATION PAGE
@@ -416,7 +434,6 @@ a.button {
 		margin-top: 20px;
 		margin-bottom: 20px; 
 		border: 1px solid #999;
-/* 		.border-radius(5px); */
 	}
 	
 	ul.rides {
