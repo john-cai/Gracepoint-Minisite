@@ -66,7 +66,10 @@
 			}
 
 		}
+		
 		array_push($events,$event);
+		fclose($file);
+
 
 	}
 		return $events;
@@ -84,11 +87,7 @@
 	$files = glob("events/*.md");
 	arsort($files);
 	$events = Deserialize($files);
-	
-	
-	
-	fclose($file);
-	
+
 	$smarty = new Smarty();
 	
 	$smarty->setTemplateDir('smarty/templates');
