@@ -7,7 +7,7 @@
 
 	$UPDATE_MSG = 'For the next three weeks, we\'ll be meeting at MSE 104!';		// message will be flashed above every page if this isn't null
 
-	$USE_LOCATION_INDEX = 0;
+	$USE_LOCATION_INDEX = 2;
 	$USE_RIDES_ARRAY = array(0, 1, 2, 3);
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
@@ -44,6 +44,13 @@
 			'line2' => 'Riverside, CA 92507',
 			'lat' => 33.97,
 			'long' => -117.3551
+		),
+		2 => array(
+			'name' => 'MSE 104',
+			'line1' => '',
+			'line2' => 'Riverside, CA 92507',
+			'lat' => 33.976206,
+			'long' => -117.327343
 		)
 	);
 	

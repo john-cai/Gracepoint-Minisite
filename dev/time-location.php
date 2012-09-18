@@ -15,7 +15,7 @@
 			<div class="row info">
 				<div class="span3"><div id="date"><?php echo date('M j', $NEXTSERVICE_TIMESTAMP); ?></div></div>
 				<div class="span3"><div id="time"><?php echo $SERVICE_TIME; ?></div></div>
-				<div class="span6"><div id="location"><?php echo $LOCATION[$USE_LOCATION_INDEX]['line1']; ?></div></div>
+				<div class="span6"><div id="location"><?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) echo $LOCATION[$USE_LOCATION_INDEX]['line1']; else echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?></div></div>
 			</div>
 			
 			<div class="row">

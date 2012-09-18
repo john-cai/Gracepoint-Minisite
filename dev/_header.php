@@ -28,12 +28,11 @@
 					<div class="row">
 						<div class="span12">
 							<div class="row">
-								<div class="span3">
+								<h1 class="span3">
 									<a class="brand" href="index.php">
-										<div id="gp-smallLogo">
-										</div>	
+										<img src="img/logo-gracepointriverside.png" alt="<?php echo $TITLE; ?>" />
 									</a>	
-								</div>
+								</h1>
 								
 								<div class="span9">
 									<div class="navLinks">

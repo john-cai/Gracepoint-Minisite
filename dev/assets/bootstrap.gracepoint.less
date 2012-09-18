@@ -134,11 +134,6 @@ small {
 	height: 100px;
 }
 
-#gp-smallLogo {
-	background: url('../img/logo-gracepointriverside.png') no-repeat;
-	height: 100px;
-}
-
 #home #nav-bar #border { border-bottom-width: 0; }
 @about-color: #EE9F74;
 @time-color: #5EA5E0;
@@ -178,6 +173,11 @@ small {
 	
 	a {
 		padding-bottom: 12px;
+		
+		&.brand {
+			position: relative;
+			top: -12px;
+		}
 	}
 	
 	#border {
@@ -290,7 +290,7 @@ small {
 			background: url('../img/home-bg-map.jpg') no-repeat -155px -22px;
 			.box-shadow(@address-shadow);
 	
-			p {
+			p div {
 				padding-top: 42px;
 				font-size: 22px;
 			}
