@@ -5,16 +5,17 @@
 	// Things that might potentially change from week to week, quarter to quarter
 	// =================================================================================
 
-	$UPDATE_MSG = 'For the next three weeks, we\'ll be meeting at MSE 104!';		// message will be flashed above every page if this isn't null
+	// special announcement message: will be flashed above every page if this isn't null
+	$UPDATE_MSG = "From 9/23 to 10/7, we'll holding service on the UCR campus, at the Material Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
 
-	$USE_LOCATION_INDEX = 2;
-	$USE_RIDES_ARRAY = array(0, 1, 2, 3);
+	$USE_LOCATION_INDEX = 2;			// use the right $LOCATION
+	$USE_RIDES_ARRAY = array(2, 3);		// given the larger array of $RIDES, choose the right pickup spots
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
 
-	$SERVICE_DAY = 7;		// 1 = Monday; 6 = Saturday; 7 = Sunday
+	$SERVICE_DAY = 7;						// 1 = Monday; 6 = Saturday; 7 = Sunday
 	$numdays = $SERVICE_DAY - date('N');	// date('N') is today's weekdate in numbers (1 = Monday, etc)
-	if ($numdays < 0) $numdays += 7;
+	if ($numdays < 0) $numdays += 7;		// this is required in the rare event that service is not held on Sunday
 	$NEXTSERVICE_TIMESTAMP = time() + ($numdays * 86400);		// 86400 = seconds in a day
 
 	// GLOBAL VARIABLES
@@ -27,6 +28,7 @@
 	$CONTACT_EMAIL = 'info@gracepointriverside.org';
 	
 	// TIME + LOCATION
+	// find latitude and longitude coordinates:
 	// http://itouchmap.com/latlong.html
 	// =================================================================================
 	
