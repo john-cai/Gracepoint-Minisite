@@ -36,6 +36,8 @@
 
 			// --map info--
 			var loc = <?php echo json_encode($LOCATION[$USE_LOCATION_INDEX]); ?>;
+			var rides_array = <?php echo json_encode($USE_RIDES_ARRAY); ?>;
+			var rides = <?php echo json_encode($RIDES); ?>;
 			
 			// --map globals--
 
@@ -61,6 +63,7 @@
         	
         	// pinShadow defined above (global)
         	function createMarker(latitude, longitude, map, pinImage) {
+        	console.log(latitude, longitude);
 	        	return new google.maps.Marker({
 					position: new google.maps.LatLng(latitude, longitude),
 					map: map,
@@ -90,30 +93,23 @@
 			
 			// --#rides_map--
 			
-			<?php
-				// ABE: this might be better done if written using all javascript...
-				$i = 1;
-				foreach($USE_RIDES_ARRAY as $index) {
-					if ($i == 1) {
-						// display rides map
-			?>
+			var i = 1;
+			$.each(rides_array, function(index, value) {		// use "value", NOT "index" (confusing, I know)
+				if (i==1) {
+					var mapOptions = {
+						zoom: 15,
+						center: new google.maps.LatLng(<?php echo $RIDES[$index]['lat'] . ', ' . $RIDES[$index]['long']; ?>),
+						mapTypeId: google.maps.MapTypeId.ROADMAP
+					}
 
-			var mapOptions = {
-				zoom: 15,
-				center: new google.maps.LatLng(<?php echo $RIDES[$index]['lat'] . ', ' . $RIDES[$index]['long']; ?>),
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
+					rides_map = new google.maps.Map(document.getElementById("rides_map"), mapOptions);	
+				} // end if
+				
+				var ridePinImage = createPinImage(i++, 'fa925e', 'ffffff');
+				
+				var rides_marker = createMarker(rides[value].lat, rides[value].long, rides_map, ridePinImage); 
 
-			var rides_map = new google.maps.Map(document.getElementById("rides_map"), mapOptions);	
-
-			<?php	} // end if ($i == 1) ?>
-			
-			var ridePinImage = createPinImage('<?php echo $i++; ?>', 'fa925e', 'ffffff');
-
-        	var rides_marker = createMarker(<?php echo $RIDES[$index]['lat'] . ', ' . $RIDES[$index]['long']; ?>, rides_map, ridePinImage);
-
-			<?php	} // end foreach ?>
-			
+			}); // end $.each()
 
 			<?php } // end if statement ?>
 			
