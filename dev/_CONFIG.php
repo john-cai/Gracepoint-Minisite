@@ -13,6 +13,7 @@
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
 
+	date_default_timezone_set('America/Los_Angeles');
 	$SERVICE_DAY = 7;						// 1 = Monday; 6 = Saturday; 7 = Sunday
 	$numdays = $SERVICE_DAY - date('N');	// date('N') is today's weekdate in numbers (1 = Monday, etc)
 	if ($numdays < 0) $numdays += 7;		// this is required in the rare event that service is not held on Sunday
@@ -26,6 +27,10 @@
 	$DESCRIPTION = 'Gracepoint Riverside Church is a Christian ministry committed to serving the students of University of California, Riverside with biblical teaching, discipleship, and simply growing together. If you need a ride, we provide pickups from the dorms and campus apartments.';
 	$KEYWORDS = 'church, ucr, ucr church, ucr church rides, churches near ucr, churches near uc riverside, ucr ride to church church rides, dorm rides, riverside-ca, riverside, university of california riverside, uc riverside, christian, college, young, ministry, christianity, discipleship, biblical teaching, Asian-American church, dorm, pickup, rides, campus';
 	$CONTACT_EMAIL = 'info@gracepointriverside.org';
+	
+	$GMAPS_KEY = 'AIzaSyAKgayMmKfoK-f_-6QB1TVsS1OTQqZPkfM';		// Google Maps key
+	$ANALYTICS_KEY = '';										// Google Analytics key
+	
 	
 	// TIME + LOCATION
 	// find latitude and longitude coordinates:
