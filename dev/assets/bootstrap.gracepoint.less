@@ -542,6 +542,14 @@ small {
 // ABOUT US PAGE
 // ====================================================================================================
 
+.textStyles {
+	text-align: center;
+	padding: 20px;
+	opacity: 0.5;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff, 0px -1px 1px #000;
+}
+
 #about {
 
 	#video-section {
@@ -549,43 +557,44 @@ small {
 		color: #B6B6B6;
 		text-align: center;
 		font-size: 23px;
-		margin: 38px 0;
+		margin-top: 38px;
 		}
 	}
 	
 	#ribbon {
 		height: 80px;
 		background: url('../img/about-bg-ribbon.jpg') repeat-x;
-		/*NOTE THERE IS A SHADOW */
-		p {
-			text-align:center;
+		.box-shadow(0px 1px 0px 0px #B5B5B5);
+		h3 {
+			.textStyles;
 		}
 	}
 	
-	#carousel-banner {
-		height: 475px;
-		background: #DDD;
-	}
-	
-	#who-we-are-content {
-		background: #C6C6C6;
-		height: 100px;
-		p {
-			font-size: 24px;
-			margin: 15px 0;
+	#storyCarousel {
+		margin-top: 1px;
+		.carousel-inner {
+			height: 670px;
 		}
 	}
+	
 	
 	.what-to-expect {
 		background: #999999;
-	/*	position: relative;*/
 		border-top: 2px solid #e5e5e5;
-	/*	#expect-shadow {
-			background: url('../img/about-shadow.png');
-			height: 61px;
-			position: relative;
-			top: 400px;
-		}*/
+		width: 100%;
+		h3 {
+		text-shadow: 3px 5px 2px #898989;
+		text-align: center;
+		color: #fff;
+		}
+		h4 {
+			text-align: center;
+			text-transform: uppercase;
+			display: block;
+		}
+		.carousel-inner {
+			height: 670px;
+		}
 	}
 	
 	.joinus {
@@ -595,20 +604,17 @@ small {
 		#expect-shadow {
 			background: url('../img/about-shadow.png');
 			height: 61px;
-			position: relative;
-			top: 0px;
 		}
 		#innerimage {
-			height: 400px;
+			height: 450px;
 			width: 881px;
 			border: 10px solid #fff;
 			background: #ACACAC;
-			position: relative;
-			top: 50px;
-			left: 60px;
+			margin: 0 auto;
 		}
-		p {
-			text-align:center;
+		h3 {
+			margin: 0px;
+			.textStyles;
 		}
 	}
 }
