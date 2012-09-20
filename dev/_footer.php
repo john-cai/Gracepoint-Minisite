@@ -84,7 +84,7 @@
 			var marker = createMarker(loc.lat, loc.long, map, pinImage);
 			
 			var infowindow = new google.maps.InfoWindow({
-			    content: loc.name + '<br />' + loc.line1 + '<br />' + loc.line2
+			    content: loc.name + '<br /><small>' + loc.line1 + '<br />' + loc.line2 + '</small>'
 			});
 			
 			google.maps.event.addListener(marker, 'click', function() {
@@ -107,7 +107,20 @@
 				
 				var ridePinImage = createPinImage(i++, 'fa925e', 'ffffff');
 				
-				var rides_marker = createMarker(rides[value].lat, rides[value].long, rides_map, ridePinImage); 
+				var this_ride = rides[value];
+				var rides_marker = createMarker(this_ride.lat, this_ride.long, rides_map, ridePinImage); 
+				
+				var infowindow = new google.maps.InfoWindow({
+				    content: this_ride.location + '<br /><small>' + this_ride.desc + '</small>'
+				});
+				
+				google.maps.event.addListener(rides_marker, 'click', function() {
+					infowindow.open(rides_map, rides_marker);
+				});
+				
+				google.maps.event.addDomListener(document.getElementById('rides-' + value), 'click', function() {
+					infowindow.open(rides_map, rides_marker);
+				});
 
 			}); // end $.each()
 

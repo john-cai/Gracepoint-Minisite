@@ -49,7 +49,7 @@
 				<?php
 					$list = '';
 					foreach($USE_RIDES_ARRAY as $index) {
-						$list .= '<li class="span3"><span><a href="#">' . $RIDES[$index]['location'] . '</a><small>' . $RIDES[$index]['desc'] . '</small></span></li>';
+						$list .= '<li class="span3"><span id="rides-' . $index . '" class="rides-nav">' . $RIDES[$index]['location'] . '<small>' . $RIDES[$index]['desc'] . '</small></span></li>';
 					}
 				?>
 				
