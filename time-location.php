@@ -8,7 +8,7 @@
 			<div class="row">
 				<div id="main" class="span12 clearfix">
 					<h3>When and Where We Meet</h3>
-					<p class="lead">We meet for our Sunday service every week at <?php echo $SERVICE_TIME; ?>. Hope to see you there!</p>
+					<p class="lead">Looking for a church near UCR? Join us as we meet each week for Sunday Worship Service. You'll find a place to ask your questions and grow spiritually!</p>
 				</div>
 			</div>
 				
@@ -38,8 +38,8 @@
 
 			<div class="row">
 				<div class="span12"> 
-					<h3>Need a Ride?</h3>
-					<p class="lead">We've got you covered! All rides will be leaving at <span class="label label-warning"><?php echo $RIDES_TIME; ?></span> from these locations:</p>
+					<h3>Need a Ride to Church?</h3>
+					<p class="lead">We've got you covered! We provide rides to church from the UCR dorms and elsewhere near campus. All rides will be leaving at <span class="label label-warning"><?php echo $RIDES_TIME; ?></span> from these locations:</p>
 				</div>
 				
 <!--

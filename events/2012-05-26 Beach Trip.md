@@ -8,5 +8,5 @@
 * http://farm9.staticflickr.com/8021/7306032352_bdc3e34a69_b.jpg
 
 ---
-We spent a refreshing day at the beach. We played sports, had good grub, and afterwards, we had a cultural night show! People from different cultures shared different songs from their mother land.  We ended the night with a time of sharing by the bonfire, followed by singing hymns together.
+We spent a refreshing day at the beach. We played sports, had good grub, and afterwards, we had a cultural night show! People from different cultures shared different songs from their motherland.  We ended the night with a time of sharing by the bonfire, followed by singing hymns together.
 ---

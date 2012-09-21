@@ -6,10 +6,10 @@
 	// =================================================================================
 
 	// special announcement message: will be flashed above every page if this isn't null
-	$UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Material Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
+	$UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Materials Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
 
 	$USE_LOCATION_INDEX = 2;			// use the right $LOCATION
-	$USE_RIDES_ARRAY = array(2, 3);		// given the larger array of $RIDES, choose the right pickup spots
+	$USE_RIDES_ARRAY = array(2, 3, 4);		// given the larger array of $RIDES, choose the right pickup spots
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
 
@@ -80,16 +80,23 @@
 		),
 		2 => array(
 			'location' => 'University Village',
-			'desc' => 'In front of the Theatre',
+			'desc' => 'In front of the UV Theater',
 			'lat' => 33.976891,
 			'long' => -117.338072
 		),
 		3 => array(
 			'location' => 'Lot 26',
-			'desc' => '',
+			'desc' => 'Next to baseball field',
 			'lat' => 33.981242,
 			'long' => -117.331345
+		),
+		4 => array(
+			'location' => 'Blaine Starbucks',
+			'desc' => 'On Blaine &amp; Iowa',
+			'lat' => 33.982709,
+			'long' => -117.339392
 		)
+
 	);
 
 

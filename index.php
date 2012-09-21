@@ -28,7 +28,7 @@
 					<h2>Welcome to Gracepoint Riverside</h2>
 <!-- 					<div class="row"> -->
 						<p class="lead">Whether you are looking for a church to call home, or are new to Christianity, we invite you to join us!</p>
-						<p>If you want to know more about us, or when and where we meet, or view some of the things we've recently done, click on the buttons below!</p>
+						<p>Found out more about us, when and where we meet, or view some of the things we've done recently:</p>
 <!-- 					</div> -->
 				</div> <!-- /#main -->
 
