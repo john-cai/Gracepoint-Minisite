@@ -52,8 +52,9 @@
 			<div class="row">
 				<?php
 					$list = '';
+					$i = 1;
 					foreach($USE_RIDES_ARRAY as $index) {
-						$list .= '<li class="span3"><span id="rides-' . $index . '" class="rides-nav">' . $RIDES[$index]['location'] . '<small>' . $RIDES[$index]['desc'] . '</small></span></li>';
+						$list .= '<li class="span3"><span id="rides-' . $index . '" class="rides-nav"><span class="ordinal">' . $i++ . '</span>' . $RIDES[$index]['location'] . '<small>' . $RIDES[$index]['desc'] . '</small></span></li>';
 					}
 				?>
 				
