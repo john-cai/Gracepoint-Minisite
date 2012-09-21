@@ -29,65 +29,77 @@
 					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div> <!-- /#main -->
 
-				<div id="date" class="span4">
-					<a href="time-location.php" class="button">
-						<div id="gradient">								
-							<div id="clock">
-								<p><?php echo $SERVICE_TIME; ?></p>
-							</div>	
+				<div class="buttons">
+
+					<div id="date" class="span4">
+						<a href="time-location.php">
+							<div id="gradient" class="button">								
+								<div id="clock">
+									<p><?php echo $SERVICE_TIME; ?></p>
+								</div>	
+							</div>
+						</a>
+						<div class="subtext">
+							<p><?php echo date('l, F jS', $NEXTSERVICE_TIMESTAMP); ?></p>
 						</div>
-					</a>
-					<div class="subtext">
-						<p><?php echo date('l, F jS', $NEXTSERVICE_TIMESTAMP); ?></p>
 					</div>
-				</div>
-
-				<div id="address" class="span4">
-					<a href="time-location.php"  class="button">
-						<p>
-							<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) {
-								echo '<div>' . $LOCATION[$USE_LOCATION_INDEX]['line1'] . '<br />' .  $LOCATION[$USE_LOCATION_INDEX]['line2'] . '</div>'; 
-								}
-								else echo $LOCATION[$USE_LOCATION_INDEX]['name'];
-							?>
-						</p>
-					</a>
-					<div class="subtext">
-						<p>We also provide rides!</p>
+	
+					<div id="address" class="span4">
+						<a href="time-location.php">
+							<div class="button">
+								<p>
+									<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) {
+										echo '<div>' . $LOCATION[$USE_LOCATION_INDEX]['line1'] . '<br />' .  $LOCATION[$USE_LOCATION_INDEX]['line2'] . '</div>'; 
+										}
+										else echo $LOCATION[$USE_LOCATION_INDEX]['name'];
+									?>
+								</p>
+							</div>
+						</a>
+						<div class="subtext">
+							<p>We also provide rides!</p>
+						</div>
 					</div>
-				</div>
-
-				<div id="events" class="span4">
-					<a href="events.php" class="button">
-						<p>Recent Events</p>
-					</a>
-					<div class="subtext">
-						<p>See what we've been up to</p>
+	
+					<div id="events" class="span4">
+						<a href="events.php">
+							<div class="button">
+								<p>Recent Events</p>
+							</div>
+						</a>
+						<div class="subtext">
+							<p>See what we've been up to</p>
+						</div>
+					</div>					
+	
+					<div id="learn" class="span6">
+						<a href="aboutus.php">
+							<div class="button">
+								<p>Learn More About Us</p>
+							</div>
+						</a>
+						<div class="subtext">
+							<p>Get to know us, and learn what to expect</p>
+						</div>
 					</div>
-				</div>					
-
-				<div id="learn" class="span6">
-					<a href="aboutus.php" class="button">
-						<p>Learn More About Us</p>
-					</a>
-					<div class="subtext">
-						<p>Get to know us, and learn what to expect</p>
+					
+					<div id="contact" class="span6">
+						<a href="mailto:<?php echo $CONTACT_EMAIL; ?>">
+							<div class="button">
+								<div id="stamp">
+									<p>Contact Us</p>
+								</div>	
+							</div>
+						</a>
+						<div class="subtext">
+							<p>Got questions or concerns? Shoot us an email!</p>
+						</div>
 					</div>
-				</div>
-				
-				<div id="contact" class="span6">
-					<a href="mailto:<?php echo $CONTACT_EMAIL; ?>" class="button">
-						<div id="stamp">
-							<p>Contact Us</p>
-						</div>	
-					</a>
-					<div class="subtext">
-						<p>Got questions or concerns? Shoot us an email!</p>
+					
+					<div id="gp-biglogo" class="span12">
 					</div>
-				</div>
-
-				<div id="gp-biglogo" class="span12">
-				</div>
+					
+				</div> <!-- /.buttons -->
 					
 			</div> <!-- /.row (outer) -->
 	
