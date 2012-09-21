@@ -42,7 +42,7 @@
 	
 	<script type="text/javascript">
 		less.env = "development";
-		
+		// comment howard noz 9.21.12
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();

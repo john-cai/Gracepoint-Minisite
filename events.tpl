@@ -13,9 +13,9 @@
 						<div id="{$event['name']|replace:' ':'-'|lower}-carousel" class="carousel slide">
 						
 			                <div class="carousel-inner">
-							
+							{assign var="firstpic" value="true"}
 							{foreach $event['pictures'] as $piclink}
-							 <div class="item">
+							 <div class="item {if $firstpic eq "true"}active {assign var="firstpic" value="false"} {/if}">
 			                    <img src="{$piclink}" alt=""/>
 			                  </div>
 							{/foreach}

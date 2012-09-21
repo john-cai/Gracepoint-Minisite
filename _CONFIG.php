@@ -6,7 +6,7 @@
 	// =================================================================================
 
 	// special announcement message: will be flashed above every page if this isn't null
-	$UPDATE_MSG = "From 9/23 to 10/7, we'll holding service on the UCR campus, at the Material Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
+	$UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Material Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
 
 	$USE_LOCATION_INDEX = 2;			// use the right $LOCATION
 	$USE_RIDES_ARRAY = array(2, 3);		// given the larger array of $RIDES, choose the right pickup spots
