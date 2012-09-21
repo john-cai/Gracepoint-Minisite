@@ -51,7 +51,6 @@
 				calcRoute($('#startAddr').val())
 			});
 
-			$("#about #fittext").fitText();
 
 			$('#getDir').live('click', function() {
 				calcRoute($('#startAddr').val())
@@ -106,28 +105,18 @@
 					destination:end,
 					travelMode: google.maps.TravelMode.DRIVING
 				};
-<<<<<<< Updated upstream:_footer.php
 
-=======
->>>>>>> Stashed changes:dev/_footer.php
 				directionsService.route(request, function(result, status) {
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
 					  directionsDisplay.setDirections(result);
-<<<<<<< Updated upstream:_footer.php
 
-/*
-=======
-					  console.log(result.routes[0].legs[0].steps);
->>>>>>> Stashed changes:dev/_footer.php
+
 					  $.each(result.routes[0].legs[0].steps, function() {
 						$('#dirSteps').append( '<br />'+ this['instructions'] );
 					  });
 					$('#dirSteps').show();
-<<<<<<< Updated upstream:_footer.php
-*/
-=======
->>>>>>> Stashed changes:dev/_footer.php
+
 					}
 				});
 			}
