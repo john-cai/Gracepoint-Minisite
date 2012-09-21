@@ -22,9 +22,14 @@
 <?php // $PAGE_ID is defined above call to _header.php ?>
 
 <body id="<?php echo $PAGE_ID; ?>">
+	<?php if ($DEV_MODE) { ?>
+		<div class="progress progress-warning progress-striped">
+		  <div class="bar">Development Mode</div>
+		</div>
+	<?php } ?>
 
 	<div id="outer">
-	
+		
 	<!-- HEADER -->
 		<div id="height-restriction" class="container">
 			<div id="nav-bar">
