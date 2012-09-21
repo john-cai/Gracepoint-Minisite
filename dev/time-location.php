@@ -35,16 +35,18 @@
 			<div class="breaker"></div>
 
 			<div class="row">
-				<div class="span8"> 
+				<div class="span12"> 
 					<h3>Need a Ride?</h3>
 					<p class="lead">We've got you covered! All rides will be leaving at <span class="label label-warning"><?php echo $RIDES_TIME; ?></span> from these locations:</p>
 				</div>
 				
+<!--
 				<div class="span4">
 					<div class="video">
 						<iframe src="http://player.vimeo.com/video/29915285?title=0&amp;byline=0&amp;portrait=0" width="500" height="275" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					</div>
 				</div>
+-->
 			</div>
 			
 			<div class="row">
@@ -64,15 +66,6 @@
 
 			</div>
 			
-<!--
-			<div class="row">
-				<div class="span12">
-					<div class="video">
-						<iframe src="http://player.vimeo.com/video/29915285" width="500" height="275" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-					</div>
-				</div>
-			</div>
--->
 
 		</div> <!-- /.container -->
 
