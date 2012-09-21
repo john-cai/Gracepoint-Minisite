@@ -15,10 +15,25 @@
 		
 	</div> <!-- /#outer -->
 
+	<?php if (!$DEV_MODE) { ?>
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', '<?php echo $ANALYTICS_KEY; ?>']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	<?php } ?>
+
 	<script src="js/less-1.3.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
-	<script src="js/jquery.fittext.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
 	<script type="text/javascript"
@@ -66,7 +81,7 @@
         	
         	// pinShadow defined above (global)
         	function createMarker(latitude, longitude, map, pinImage) {
-        	console.log(latitude, longitude);
+/*         	console.log(latitude, longitude); */
 	        	return new google.maps.Marker({
 					position: new google.maps.LatLng(latitude, longitude),
 					map: map,
@@ -83,15 +98,18 @@
 					destination:end,
 					travelMode: google.maps.TravelMode.DRIVING
 				};
+
 				directionsService.route(request, function(result, status) {
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
 					  directionsDisplay.setDirections(result);
-					  console.log(result.routes[0].legs[0].steps);
+
+/*
 					  $.each(result.routes[0].legs[0].steps, function() {
 						$('#dirSteps').append( '<br />'+ this['instructions'] );
 					  });
 					$('#dirSteps').show();
+*/
 					}
 				});
 			}

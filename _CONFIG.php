@@ -23,13 +23,17 @@
 	// Mainly variables used for the header and footer
 	// =================================================================================
 	
+	// Flag to switch on/off development mode. When off, it uses .less files (instead of .css) and skips analytic trackers
+	// When going live, this should be off (0)
+	$DEV_MODE = 1;
+	
 	$TITLE = 'Gracepoint Riverside';
 	$DESCRIPTION = 'Gracepoint Riverside Church is a Christian ministry committed to serving the students of University of California, Riverside with biblical teaching, discipleship, and simply growing together. If you need a ride, we provide pickups from the dorms and campus apartments.';
 	$KEYWORDS = 'church, ucr, ucr church, ucr church rides, churches near ucr, churches near uc riverside, ucr ride to church church rides, dorm rides, riverside-ca, riverside, university of california riverside, uc riverside, christian, college, young, ministry, christianity, discipleship, biblical teaching, Asian-American church, dorm, pickup, rides, campus';
 	$CONTACT_EMAIL = 'info@gracepointriverside.org';
 	
 	$GMAPS_KEY = 'AIzaSyAKgayMmKfoK-f_-6QB1TVsS1OTQqZPkfM';		// Google Maps key
-	$ANALYTICS_KEY = '';										// Google Analytics key
+	$ANALYTICS_KEY = 'UA-97361-35';								// Google Analytics key
 	
 	
 	// TIME + LOCATION
