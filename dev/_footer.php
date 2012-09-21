@@ -87,11 +87,13 @@
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
 					  directionsDisplay.setDirections(result);
-/* 					  console.log(result.routes[0].legs[0].steps); */
+
+/*
 					  $.each(result.routes[0].legs[0].steps, function() {
 						$('#dirSteps').append( '<br />'+ this['instructions'] );
 					  });
 					$('#dirSteps').show();
+*/
 					}
 				});
 			}
