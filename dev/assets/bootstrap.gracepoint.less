@@ -228,15 +228,27 @@ small {
 		.content-columns(2);
 	}
 	
-	a.button {
+	
+	.buttons a {
+		display: block;
+		.border-radius(5px);
+		.transition(all 0.3s ease-in-out);
+		.opacity(90);
+		.box-shadow(none);
+		
+		&:hover {
+			text-decoration: none;
+			.opacity(99);
+			.box-shadow(0 0 10px #03c);
+		}
+	}
+
+	.button {
 		height: 140px;
 		.border-radius(5px);
 		border: 1px solid #666;
 		display: block;
-		
-		&:hover {
-			text-decoration: none;
-		}
+
 		
 		p { 
 			padding-top: 54px; 
@@ -272,8 +284,7 @@ small {
 				background: url('../img/home-bg-clock.png') center center no-repeat;
 			}
 	
-			#gradient {
-				height: 100%;
+			&#gradient {
 				.box-shadow(@date-shadow); 
 				.gradientBar(#8FD877, #49B23D);
 			}
