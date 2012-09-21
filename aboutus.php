@@ -22,14 +22,14 @@
 			</div>
 		</div><!-- /.container -->
 		<div class="nocontainer">
-			<div class="who-we-are">
+			<!-- <div class="who-we-are">
 				<div id="ribbon">
 					<h3>
 						Who We Are
 					</h3>
 				</div>
 				<div id="storyCarousel" class="carousel slide">
-					<!-- Carousel items -->
+					<!-- Carousel items
 					<div class="carousel-inner">
 						<div class="active item">
 							<img src="http://farm5.staticflickr.com/4018/4684490158_3b5f5cfca3_b.jpg" alt="">
@@ -87,64 +87,53 @@
 								</p>
 							</div>
 						</div>
-					</div><!-- Carousel nav -->
+					</div><!-- Carousel nav 
 					<a class="carousel-control left" href="#storyCarousel" data-slide="prev">‹</a> <a class="carousel-control right" href="#storyCarousel" data-slide="next">›</a>
 				</div>
-			</div>
+			</div> -->
 			<div class="what-to-expect">
-				<h3>
-					- What to Expect -
-				</h3>
+
 				<div id="what-to-expectCarousel" class="carousel slide">
+					<h3>
+						- What to Expect -
+					</h3>
 					<!-- Carousel items -->
 					<div class="carousel-inner">
 						<div class="active item">
 							<img src="http://farm7.staticflickr.com/6121/6202249861_b1dd0ccf44_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
-									Word of God
+								<h4>
+									Messages
 								</h4>
-							</div>
-						</div>
-						<div class=" item">
-							<img src="http://farm7.staticflickr.com/6095/6275463544_4f1a113bee_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
-									Sports
-								</h4>
-							</div>
-						</div>
-						<div class="item">
-							<img src="http://farm7.staticflickr.com/6060/6379451775_5b5f7e6fde_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
-									Outings
-								</h4>
-							</div>
-						</div>
-						<div class="item">
-							<img src="http://farm8.staticflickr.com/7174/6699146347_9763540620_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
-									Fun
-								</h4>
-							</div>
-						</div>
-						<div class="item">
-							<img src="http://farm8.staticflickr.com/7207/7146609923_51999115fa_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
-									Food
-								</h4>
-							</div>
 						</div>
 						<div class="item">
 							<img src="http://farm7.staticflickr.com/6032/6274733911_4de76cf568_b.jpg" alt="">
-							<div class="carousel-caption">
-								<h4 id="fittext">
+								<h4>
 									Praise
 								</h4>
-							</div>
+						</div>
+						<div class="item">
+							<img src="http://farm8.staticflickr.com/7207/7146609923_51999115fa_b.jpg" alt="">
+								<h4>
+									Food
+								</h4>
+						</div>
+						<div class="item">
+							<img src="http://farm8.staticflickr.com/7174/6699146347_9763540620_b.jpg" alt="">
+								<h4>
+									Fun
+								</h4>
+						</div>
+						<div class=" item">
+							<img src="http://farm7.staticflickr.com/6095/6275463544_4f1a113bee_b.jpg" alt="">
+								<h4>
+									Sports
+								</h4>
+						</div>
+						<div class="item">
+							<img src="http://farm7.staticflickr.com/6060/6379451775_5b5f7e6fde_b.jpg" alt="">
+								<h4>
+									Outings
+								</h4>
 						</div>
 					</div><!-- Carousel nav -->
 					<a class="carousel-control left" href="#what-to-expectCarousel" data-slide="prev">‹</a> <a class="carousel-control right" href="#what-to-expectCarousel" data-slide="next">›</a>

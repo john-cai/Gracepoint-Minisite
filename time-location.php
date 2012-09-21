@@ -30,7 +30,9 @@
 				</div>
 			</form>
 			
+
 <!-- 			<div id="dirSteps" style="display:none;"></div> -->
+
 			
 			<div class="breaker"></div>
 
