@@ -31,6 +31,9 @@
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
+			$('#getDir').live('click', function() {
+				calcRoute($('#startAddr').val())
+			});
 			
 			<?php if ($PAGE_ID == 'time-location') { ?>
 
@@ -72,6 +75,27 @@
 				});
         	}
 						
+			// requests and displays directions
+			function calcRoute(start) {
+				var end = new google.maps.LatLng(loc.lat, loc.long);
+				var request = {
+					origin:start,
+					destination:end,
+					travelMode: google.maps.TravelMode.DRIVING
+				};
+				directionsService.route(request, function(result, status) {
+					$('#dirSteps').html('');
+					if (status == google.maps.DirectionsStatus.OK) {
+					  directionsDisplay.setDirections(result);
+					  console.log(result.routes[0].legs[0].steps);
+					  $.each(result.routes[0].legs[0].steps, function() {
+						$('#dirSteps').append( '<br />'+ this['instructions'] );
+					  });
+					$('#dirSteps').show();
+					}
+				});
+			}
+						
 			// --#map--
 			var mapOptions = {
 				zoom: 16,
@@ -79,6 +103,9 @@
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
 			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			var directionsService = new google.maps.DirectionsService();
+			var directionsDisplay = new google.maps.DirectionsRenderer();
+			directionsDisplay.setMap(map);
 			
 			var pinImage = createPinImage('%E2%80%A2', '4295db', 'ffffff');
 			var marker = createMarker(loc.lat, loc.long, map, pinImage);

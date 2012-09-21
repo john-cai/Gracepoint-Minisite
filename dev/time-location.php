@@ -24,11 +24,13 @@
 			
 			<form>
 				<div class="row">
-					<div class="span9"><input type="text" class="span9" placeholder="Enter your starting address"></div>
+					<div class="span9"><input id="startAddr" type="text" class="span9" placeholder="Enter your starting address"></div>
 <!-- 					<input type="text" class="span3" placeholder="Enter your starting address"> -->
-					<div class="span3"><button type="button" class="btn btn-primary btn-block">Get Directions</button></div>
+					<div class="span3"><button id="getDir" type="button" class="btn btn-primary btn-block">Get Directions</button></div>
 				</div>
 			</form>
+			
+			<div id="dirSteps" style="display:none;"></div>
 			
 			<div class="breaker"></div>
 
