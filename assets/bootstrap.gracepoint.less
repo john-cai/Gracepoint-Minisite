@@ -476,13 +476,21 @@ small {
 		li {
 			list-style-image: none;
 			list-style-type: none;
-			background: url('../img/time-location.png') left top no-repeat;
+			background: url('../img/time-rides-location.png') left top no-repeat;
 
-			span { 
+			.rides-nav { 
 				font-size: 18px;
 				height: 45px;
 				padding-left: 30px;
 				margin-bottom: 5px;
+				position: relative;
+				
+				span {
+					color: #fff;
+					position: absolute;		// need absolute so it doesn't leave a "physical" space
+					left: 6px;
+					text-align: center;
+				}
 			}
 			
 			small { display: block; padding-left: 30px; }

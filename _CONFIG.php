@@ -80,7 +80,7 @@
 		),
 		2 => array(
 			'location' => 'University Village',
-			'desc' => 'In front of Theatre',
+			'desc' => 'In front of the Theatre',
 			'lat' => 33.976891,
 			'long' => -117.338072
 		),
