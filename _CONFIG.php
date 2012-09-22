@@ -25,7 +25,7 @@
 	
 	// Flag to switch on/off development mode. When off, it uses .less files (instead of .css) and skips analytic trackers
 	// When going live, this should be off (0)
-	$DEV_MODE = 0;
+	$DEV_MODE = 1;
 	
 	$TITLE = 'Gracepoint Riverside';
 	$DESCRIPTION = 'Gracepoint Riverside Church is a Christian ministry committed to serving the students of University of California, Riverside with biblical teaching, discipleship, and simply growing together. If you need a ride, we provide pickups from the dorms and campus apartments.';
