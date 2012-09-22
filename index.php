@@ -26,10 +26,8 @@
 			<div class="row">
 				<div id="main" class="span12 clearfix">
 					<h2>Welcome to Gracepoint Riverside</h2>
-<!-- 					<div class="row"> -->
 						<p class="lead">Whether you are looking for a church to call home, or are new to Christianity, we invite you to join us!</p>
-						<p>Found out more about us, when and where we meet, or view some of the things we've done recently:</p>
-<!-- 					</div> -->
+						<p>Find out more about us, when and where we meet, or view some of the things we've done recently:</p>
 				</div> <!-- /#main -->
 
 				<div class="buttons">
