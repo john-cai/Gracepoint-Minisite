@@ -5290,7 +5290,13 @@ small {
   border: 10px solid #fff;
   background: #ACACAC;
   margin: 0 auto;
-  background: url('http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg') -62px -96px;
+  overflow: hidden;
+  /* 			background: url('http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg') -62px -96px; */
+
+}
+#about .joinus #innerimage img {
+  position: relative;
+  top: -130px;
 }
 #about .joinus #curve-shadow {
   background: url('../img/about-shadow-curve.png') no-repeat 0px -90px;
