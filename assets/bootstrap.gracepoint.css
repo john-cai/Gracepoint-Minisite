@@ -2262,7 +2262,7 @@ table .span24 {
 .open {
   *z-index: 1000;
 }
-.open  > .dropdown-menu {
+.open > .dropdown-menu {
   display: block;
 }
 .pull-right > .dropdown-menu {
@@ -4795,6 +4795,15 @@ small {
   margin: 0 auto;
   background: #ffffff;
 }
+.progress {
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 500;
+}
+.progress .bar {
+  width: 100%;
+}
 .breaker {
   height: 7px;
   margin-bottom: 20px;
@@ -5091,8 +5100,6 @@ small {
 }
 #time-location .map {
   border: 1px solid #999;
-  /* 		.gmnoprint { display: none; } */
-
 }
 #time-location .map img {
   max-width: none;
@@ -5123,6 +5130,11 @@ small {
   padding-left: 30px;
   margin-bottom: 5px;
   position: relative;
+  display: block;
+}
+#time-location ul.rides li .rides-nav:hover {
+  cursor: pointer;
+  color: #fa925e;
 }
 #time-location ul.rides li .rides-nav span {
   color: #fff;
@@ -5130,9 +5142,8 @@ small {
   left: 6px;
   text-align: center;
 }
-#time-location ul.rides li small {
+#time-location ul.rides li .rides-nav small {
   display: block;
-  padding-left: 30px;
 }
 #time-location .btn-block {
   display: block;

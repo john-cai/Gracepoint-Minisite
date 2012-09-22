@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<footer>
-						<p class="span6"><a href="http://gracepointriverside.org/">Gracepoint Riverside Church</a> started out as an Asian-American church ministering to college students at UCR &mdash; since then, we have become more multi-ethnic in composition. You'll find those who are learning about Christianity for the first time, as well as those who have been attending church fellowships throughout their lives.</p>
+						<p class="span6"><a href="http://gracepointriverside.org/"><?php echo $TITLE; ?> Church</a> started out as an Asian-American church ministering to college students at UCR &mdash; since then, we have become more multi-ethnic in composition. You'll find those who are learning about Christianity for the first time, as well as those who have been attending church fellowships throughout their lives.</p>
 						<p class="span3">We are a member of the <a href="http://www.sbc.net/">Southern Baptist Convention</a> and a part of the <a href="http://www.iesba.org/">Inland Empire Southern Baptist Association</a>, as well as <a href="http://www.gracepointministries.org/">Gracepoint Ministries</a>.</p>
 						<p class="span3">If you'd like more info or have questions, please contact us at <a href="mailto:<?php echo $CONTACT_EMAIL; ?>"><?php echo $CONTACT_EMAIL; ?></a>.</p>
 					</footer>

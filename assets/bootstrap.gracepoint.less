@@ -112,6 +112,8 @@ small {
 .progress { 
 	margin: 0;
 	width: 100%;
+	position: fixed;
+	z-index: 500;
 	
 	.bar { width: 100%; }
 }
@@ -460,7 +462,6 @@ small {
 		border: 1px solid #999;
 
 		img { max-width: none; }
-/* 		.gmnoprint { display: none; } */
 		
 		&#map {
 			height: 400px;
@@ -490,6 +491,12 @@ small {
 				padding-left: 30px;
 				margin-bottom: 5px;
 				position: relative;
+				display: block;
+				
+				&:hover {
+					cursor: pointer;
+					color: #fa925e;
+				}
 				
 				span {
 					color: #fff;
@@ -497,9 +504,10 @@ small {
 					left: 6px;
 					text-align: center;
 				}
+				
+				small { display: block; }
 			}
 			
-			small { display: block; padding-left: 30px; }
 		}
 	}
 	
