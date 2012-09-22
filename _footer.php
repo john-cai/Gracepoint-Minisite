@@ -73,11 +73,6 @@
 	
 	<script type="text/javascript">
 		less.env = "development";
-<<<<<<< Updated upstream
-
-=======
-		
->>>>>>> Stashed changes
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
@@ -143,27 +138,6 @@
 				directionsService.route(request, function(result, status) {
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
-<<<<<<< Updated upstream
-					  directionsDisplay.setDirections(result);
-
-/*
-					  $.each(result.routes[0].legs[0].steps, function() {
-						$('#dirSteps').append( '<br />'+ this['instructions'] );
-					  });
-					$('#dirSteps').show();
-*/
-
-=======
-						directionsDisplay.setDirections(result);
-						// removes markers
-						// directionsDisplay.setOptions( { suppressMarkers: true } );
-						$.each(result.routes[0].legs[0].steps, function() {
-							$('#dirSteps').append( '<br />'+ this['instructions'] );
-						});
-						$('#dirSteps').show();
-					} else {
-						$('#myModal').modal({keyboard:true});
->>>>>>> Stashed changes
 					}
 				});
 			}
