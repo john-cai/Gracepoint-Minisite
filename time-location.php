@@ -22,7 +22,7 @@
 				<div id="map" class="map span12"></div>
 			</div>
 			
-			<form>
+			<form id="getDir_form">
 				<div class="row">
 					<div class="span9"><input id="startAddr" type="text" class="span9" placeholder="Enter your starting address"></div>
 <!-- 					<input type="text" class="span3" placeholder="Enter your starting address"> -->
