@@ -13,6 +13,20 @@
 			</div>
 		</div> <!-- /#footer -->
 		
+		<!-- MODAL -->
+		<div id="myModal" class="modal hide fade">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h3>Error</h3>
+			</div>
+			<div class="modal-body">
+				<p>Please enter a valid address.</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+			</div>
+		</div> <!-- /#modal -->
+		
 	</div> <!-- /#outer -->
 
 	<?php if (!$DEV_MODE) { ?>
@@ -50,6 +64,7 @@
 	<script src="js/less-1.3.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
+	<script src="js/bootstrap-modal.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
 	<script type="text/javascript"
@@ -58,21 +73,24 @@
 	
 	<script type="text/javascript">
 		less.env = "development";
+<<<<<<< Updated upstream
 
+=======
+		
+>>>>>>> Stashed changes
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
 
-			$('#getDir').live('click', function() {
-				calcRoute($('#startAddr').val())
+			$("#getDir_form").submit( function() { 
+				calcRoute($('#startAddr').val());
+				return false;
 			});
 
-
 			$('#getDir').live('click', function() {
-				calcRoute($('#startAddr').val())
+				calcRoute($('#startAddr').val());
 			});
 
-			
 			<?php if ($PAGE_ID == 'time-location') { ?>
 
 			// --map info--
@@ -125,6 +143,7 @@
 				directionsService.route(request, function(result, status) {
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
+<<<<<<< Updated upstream
 					  directionsDisplay.setDirections(result);
 
 /*
@@ -134,6 +153,17 @@
 					$('#dirSteps').show();
 */
 
+=======
+						directionsDisplay.setDirections(result);
+						// removes markers
+						// directionsDisplay.setOptions( { suppressMarkers: true } );
+						$.each(result.routes[0].legs[0].steps, function() {
+							$('#dirSteps').append( '<br />'+ this['instructions'] );
+						});
+						$('#dirSteps').show();
+					} else {
+						$('#myModal').modal({keyboard:true});
+>>>>>>> Stashed changes
 					}
 				});
 			}
