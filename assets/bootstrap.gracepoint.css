@@ -5083,6 +5083,14 @@ small {
 #time-location .img-polaroid {
   max-width: 292px;
 }
+#time-location #helpinfo {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: pointer;
+}
+#time-location #helpinfo i {
+  margin-top: 8px;
+}
 #time-location .info {
   margin-top: 20px;
 }

@@ -66,6 +66,8 @@
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
 	<script src="js/bootstrap-modal.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
+	<script src="js/bootstrap-tooltip.js" type="text/javascript"></script>
+	<script src="js/bootstrap-popover.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=<?php echo $GMAPS_KEY; ?>&sensor=false">
@@ -79,7 +81,14 @@
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
-
+			
+			// --help info popover--
+			$('#helpinfo').popover({
+				title: "Additional Info",
+				placement: "top"
+			});
+			
+			// --map directions--
 			$("#getDir_form").submit( function() { 
 				calcRoute($('#startAddr').val());
 				return false;

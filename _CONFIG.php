@@ -41,6 +41,7 @@
 	// http://itouchmap.com/latlong.html
 	//
 	// thumbnail: small (320px) in flickr
+	// helpinfo: if you use double quotes, make sure to escape them (use \" instead of just ")
 	// =================================================================================
 	
 	$LOCATION = array(
@@ -65,7 +66,7 @@
 			'lat' => 33.976206,
 			'long' => -117.327343,
 			'thumbnail' => 'http://farm9.staticflickr.com/8039/8013663868_f89a4885dc_n.jpg',
-			'helpinfo' => 'Near AI and the Rec. <br />For parking, please park on Linden or Canyon Crest.'
+			'helpinfo' => 'Located near AI and the Rec. <br />For parking, please park on Linden or Canyon Crest.'
 		)
 	);
 	

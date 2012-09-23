@@ -18,7 +18,12 @@
 			<div class="row info">
 				<div class="span4"><div id="date"><?php echo date('l, M j', $NEXTSERVICE_TIMESTAMP); ?></div></div>
 				<div class="span3"><div id="time"><?php echo $SERVICE_TIME; ?></div></div>
-				<div class="span5"><div id="location"><?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) echo $LOCATION[$USE_LOCATION_INDEX]['line1']; else echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?></div></div>
+				<div class="span5"><div id="location">
+					<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) echo $LOCATION[$USE_LOCATION_INDEX]['line1']; else echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?> 
+					<?php if ($LOCATION[$USE_LOCATION_INDEX]['helpinfo']) { ?>
+						<span id="helpinfo" data-content="<?php echo $LOCATION[$USE_LOCATION_INDEX]['helpinfo']; ?>"><i class="icon-info-sign"></i></span>
+					<?php } ?>
+				</div></div>
 			</div>
 			
 			<div class="row">
