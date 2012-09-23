@@ -5219,7 +5219,7 @@ small {
   text-shadow: 0px 1px 1px #ffffff, 0px -1px 1px #000000;
 }
 #about #video-section p {
-  color: #B6B6B6;
+  color: #bbb;
   text-align: center;
   font-size: 23px;
   margin-top: 38px;
@@ -5248,22 +5248,23 @@ small {
   border-top: 2px solid #e5e5e5;
   position: relative;
 }
-#about .what-to-expect h3 {
-  text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.5);
+#about .what-to-expect h3,
+#about .what-to-expect h4 {
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
+}
+#about .what-to-expect h3 {
   position: absolute;
   width: 100%;
   top: 75px;
   z-index: 100;
 }
 #about .what-to-expect h4 {
-  text-align: center;
-  text-transform: uppercase;
   position: relative;
   top: -200px;
   color: #fff;
-  text-shadow: 3px 5px 1px rgba(0, 0, 0, 0.5);
   font-size: 100px;
 }
 #about .what-to-expect .carousel-inner {
@@ -5297,8 +5298,6 @@ small {
   background: #ACACAC;
   margin: 0 auto;
   overflow: hidden;
-  /* 			background: url('http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg') -62px -96px; */
-
 }
 #about .joinus #innerimage img {
   position: relative;
