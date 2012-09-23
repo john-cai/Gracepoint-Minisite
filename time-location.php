@@ -6,9 +6,12 @@
 	
 		<div class="container">
 			<div class="row">
-				<div id="main" class="span12 clearfix">
+				<div id="main" class="span8 clearfix">
 					<h3>When and Where We Meet</h3>
 					<p class="lead">Looking for a church near UCR? Join us as we meet each week for Sunday Worship Service. You'll find a place to ask your questions and grow spiritually!</p>
+				</div>
+				<div class="span4">
+					<img class="img-polaroid" src="<?php echo $LOCATION[$USE_LOCATION_INDEX]['thumbnail']; ?>" />
 				</div>
 			</div>
 				

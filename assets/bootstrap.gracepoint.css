@@ -5080,6 +5080,12 @@ small {
     width: 1020px;
   }
 }
+#time-location .img-polaroid {
+  max-width: 292px;
+}
+#time-location .info {
+  margin-top: 20px;
+}
 #time-location .info div {
   font-size: 30px;
 }

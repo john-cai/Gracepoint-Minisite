@@ -39,6 +39,8 @@
 	// TIME + LOCATION
 	// find latitude and longitude coordinates:
 	// http://itouchmap.com/latlong.html
+	//
+	// thumbnail: small (320px) in flickr
 	// =================================================================================
 	
 	$LOCATION = array(
@@ -61,7 +63,9 @@
 			'line1' => '',
 			'line2' => 'Riverside, CA 92507',
 			'lat' => 33.976206,
-			'long' => -117.327343
+			'long' => -117.327343,
+			'thumbnail' => 'http://farm9.staticflickr.com/8039/8013663868_f89a4885dc_n.jpg',
+			'helpinfo' => 'Near AI and the Rec. <br />For parking, please park on Linden or Canyon Crest.'
 		)
 	);
 	
