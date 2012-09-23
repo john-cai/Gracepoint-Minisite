@@ -30,9 +30,9 @@
 	</div> <!-- /#outer -->
 
 	<?php if (!$DEV_MODE) { ?>
-	<!-- Google Analytics -->
 	<script type="text/javascript">
-	
+
+	// Google Analytics
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', '<?php echo $ANALYTICS_KEY; ?>']);
 	  _gaq.push(['_trackPageview']);
@@ -43,10 +43,7 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	
-	</script>
-	
-	<!-- Gaug.es Analytics -->
-	<script type="text/javascript">
+	 // Gaug.es Analytics
 	  var _gauges = _gauges || [];
 	  (function() {
 	    var t   = document.createElement('script');
@@ -58,6 +55,12 @@
 	    var s = document.getElementsByTagName('script')[0];
 	    s.parentNode.insertBefore(t, s);
 	  })();
+
+	  // Crazy Egg
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/7790.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 	</script>
 	<?php } ?>
 
