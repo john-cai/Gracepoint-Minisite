@@ -143,7 +143,9 @@
 				<h3>
 					Come Join Us!
 				</h3>
-				<div id="innerimage"></div>
+				<div id="innerimage">
+					<img src="http://farm6.static.flickr.com/5230/5656013254_95f455e02a_b.jpg" alt="Come join us at Gracepoint Riverside" />
+				</div>
 				<div id="curve-shadow"></div>
 			</div><!--END BODY -->
 			<?php require('_footer.php'); ?>

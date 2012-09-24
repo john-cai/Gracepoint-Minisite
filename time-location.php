@@ -6,16 +6,24 @@
 	
 		<div class="container">
 			<div class="row">
-				<div id="main" class="span12 clearfix">
+				<div id="main" class="span8 clearfix">
 					<h3>When and Where We Meet</h3>
 					<p class="lead">Looking for a church near UCR? Join us as we meet each week for Sunday Worship Service. You'll find a place to ask your questions and grow spiritually!</p>
+				</div>
+				<div class="span4">
+					<img class="img-polaroid" src="<?php echo $LOCATION[$USE_LOCATION_INDEX]['thumbnail']; ?>" />
 				</div>
 			</div>
 				
 			<div class="row info">
 				<div class="span4"><div id="date"><?php echo date('l, M j', $NEXTSERVICE_TIMESTAMP); ?></div></div>
 				<div class="span3"><div id="time"><?php echo $SERVICE_TIME; ?></div></div>
-				<div class="span5"><div id="location"><?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) echo $LOCATION[$USE_LOCATION_INDEX]['line1']; else echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?></div></div>
+				<div class="span5"><div id="location">
+					<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) echo $LOCATION[$USE_LOCATION_INDEX]['line1']; else echo $LOCATION[$USE_LOCATION_INDEX]['name']; ?> 
+					<?php if ($LOCATION[$USE_LOCATION_INDEX]['helpinfo']) { ?>
+						<span id="helpinfo" data-content="<?php echo $LOCATION[$USE_LOCATION_INDEX]['helpinfo']; ?>"><i class="icon-info-sign"></i></span>
+					<?php } ?>
+				</div></div>
 			</div>
 			
 			<div class="row">

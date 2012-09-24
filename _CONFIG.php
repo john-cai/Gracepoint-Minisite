@@ -8,7 +8,7 @@
 	// special announcement message: will be flashed above every page if this isn't null
 	$UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Materials Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
 
-	$USE_LOCATION_INDEX = 2;			// use the right $LOCATION
+	$USE_LOCATION_INDEX = 2;				// use the right $LOCATION
 	$USE_RIDES_ARRAY = array(2, 3, 4);		// given the larger array of $RIDES, choose the right pickup spots
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
@@ -25,7 +25,7 @@
 	
 	// Flag to switch on/off development mode. When off, it uses .less files (instead of .css) and skips analytic trackers
 	// When going live, this should be off (0)
-	$DEV_MODE = 0;
+	$DEV_MODE = 1;
 	
 	$TITLE = 'Gracepoint Riverside';
 	$DESCRIPTION = 'Gracepoint Riverside Church is a Christian ministry committed to serving the students of University of California, Riverside with biblical teaching, discipleship, and simply growing together. If you need a ride, we provide pickups from the dorms and campus apartments.';
@@ -39,6 +39,9 @@
 	// TIME + LOCATION
 	// find latitude and longitude coordinates:
 	// http://itouchmap.com/latlong.html
+	//
+	// thumbnail: small (320px) in flickr
+	// helpinfo: if you use double quotes, make sure to escape them (use \" instead of just ")
 	// =================================================================================
 	
 	$LOCATION = array(
@@ -61,7 +64,9 @@
 			'line1' => '',
 			'line2' => 'Riverside, CA 92507',
 			'lat' => 33.976206,
-			'long' => -117.327343
+			'long' => -117.327343,
+			'thumbnail' => 'http://farm9.staticflickr.com/8039/8013663868_f89a4885dc_n.jpg',
+			'helpinfo' => 'Located near AI and the Rec. <br />For parking, please park on Linden or Canyon Crest.'
 		)
 	);
 	
