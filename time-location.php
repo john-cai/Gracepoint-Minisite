@@ -19,10 +19,19 @@
 			</div>
 			
 			<div class="row">
-				<div id="map" class="map span12"></div>
+				<div>
+					<div id="map" class="map span12"></div>
+					</div>
+			</div>
+			
+			<div id="mapError" class="alert alert-block alert-error fade in" style="display:none;">
+				<h4 class="alert-heading">Error!</h4>
+				<a class="close" data-dismiss="alert" href="#">&times;</a>
+				<p>Invalid address</p>
 			</div>
 			
 			<form id="getDir_form">
+				<!-- POPOVER -->
 				<div class="row">
 					<div class="span9"><input id="startAddr" type="text" class="span9" placeholder="Enter your starting address"></div>
 <!-- 					<input type="text" class="span3" placeholder="Enter your starting address"> -->

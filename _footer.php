@@ -62,11 +62,13 @@
 	<?php } ?>
 
 	<script src="js/less-1.3.0.min.js" type="text/javascript"></script>
-	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
-	<script src="js/bootstrap-modal.js" type="text/javascript"></script>
+	<script src="js/bootstrap-alert.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=<?php echo $GMAPS_KEY; ?>&sensor=false">
     </script>
@@ -79,6 +81,9 @@
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
+			/*$("#getDir").click(function () {
+				$("#mapError").show("slide", { direction: "down" }, 300);
+			});*/
 
 			$("#getDir_form").submit( function() { 
 				calcRoute($('#startAddr').val());
@@ -141,15 +146,16 @@
 				directionsService.route(request, function(result, status) {
 					$('#dirSteps').html('');
 					if (status == google.maps.DirectionsStatus.OK) {
-											directionsDisplay.setDirections(result);
+						directionsDisplay.setDirections(result);
 						// removes markers
-						// directionsDisplay.setOptions( { suppressMarkers: true } );
+						directionsDisplay.setOptions( { suppressMarkers: true } );
+						var startMarker = createMarker(result.routes[0].legs[0].start_location['Xa'], result.routes[0].legs[0].start_location['Ya'], map, pinImage);
 						$.each(result.routes[0].legs[0].steps, function() {
 							$('#dirSteps').append( '<br />'+ this['instructions'] );
 						});
 						$('#dirSteps').show();
 					} else {
-						$('#myModal').modal({keyboard:true});
+						//$('#invalidAddr').popover('show');
 					}
 				});
 			}
