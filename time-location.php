@@ -39,10 +39,8 @@
 			</div>
 			
 			<form id="getDir_form">
-				<!-- POPOVER -->
 				<div class="row">
 					<div class="span9"><input id="startAddr" type="text" class="span9" placeholder="Enter your starting address"></div>
-<!-- 					<input type="text" class="span3" placeholder="Enter your starting address"> -->
 					<div class="span3"><button id="getDir" type="button" class="btn btn-primary btn-block">Get Directions</button></div>
 				</div>
 			</form>

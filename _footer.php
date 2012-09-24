@@ -13,14 +13,14 @@
 			</div>
 		</div> <!-- /#footer -->
 		
-		<!-- MODAL -->
+		<!-- Modal -->
 		<div id="myModal" class="modal hide fade">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h3>Error</h3>
+				<h3>Sorry!</h3>
 			</div>
 			<div class="modal-body">
-				<p>Please enter a valid address.</p>
+				<p>We didn't find your starting address. Please make sure there are no spelling mistakes (it also helps to include the city and zip code).</p>
 			</div>
 			<div class="modal-footer">
 				<button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -67,7 +67,8 @@
 	<script src="js/less-1.3.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
 	<script src="js/jquery.fitvids.js" type="text/javascript"></script>
-	<script src="js/bootstrap-alert.js" type="text/javascript"></script>
+<!-- 	<script src="js/bootstrap-alert.js" type="text/javascript"></script> -->
+	<script src="js/bootstrap-modal.js" type="text/javascript"></script>
 	<script src="js/bootstrap-carousel.js" type="text/javascript"></script>
 	<script src="js/bootstrap-tooltip.js" type="text/javascript"></script>
 	<script src="js/bootstrap-popover.js" type="text/javascript"></script>
@@ -129,6 +130,8 @@
 		        new google.maps.Point(12, 35)
         	);
         	
+        	var startMarker;		// for directions
+        	
         	// fill_color, text_color: in hex, no hash
         	function createPinImage(text, fill_color, text_color) {
 	        	return new google.maps.MarkerImage(markerUrl + text + '|' + fill_color + '|' + text_color,
@@ -140,7 +143,6 @@
         	
         	// pinShadow defined above (global)
         	function createMarker(latitude, longitude, map, pinImage) {
-/*         	console.log(latitude, longitude); */
 	        	return new google.maps.Marker({
 					position: new google.maps.LatLng(latitude, longitude),
 					map: map,
@@ -159,17 +161,24 @@
 				};
 
 				directionsService.route(request, function(result, status) {
-					$('#dirSteps').html('');
+/* 					$('#dirSteps').html(''); */
 					if (status == google.maps.DirectionsStatus.OK) {
 						directionsDisplay.setDirections(result);
-						// removes markers
+
+						// suppress Google's default markers
 						directionsDisplay.setOptions( { suppressMarkers: true } );
-						var startMarker = createMarker(result.routes[0].legs[0].start_location['Xa'], result.routes[0].legs[0].start_location['Ya'], map, pinImage);
+						
+						// remove existing markers (from searching directions previously)
+						if (startMarker) startMarker.setMap(null);
+						
+						var startPinImage = createPinImage('%E2%80%A2', '65C265', 'ffffff');
+						startMarker = createMarker(result.routes[0].legs[0].start_location['Xa'], result.routes[0].legs[0].start_location['Ya'], map, startPinImage);
 						$.each(result.routes[0].legs[0].steps, function() {
-							$('#dirSteps').append( '<br />'+ this['instructions'] );
+/* 							$('#dirSteps').append( '<br />'+ this['instructions'] ); */
 						});
-						$('#dirSteps').show();
+/* 						$('#dirSteps').show(); */
 					} else {
+						$('#myModal').modal({keyboard:true});
 						//$('#invalidAddr').popover('show');
 					}
 				});
