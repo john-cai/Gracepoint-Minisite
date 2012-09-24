@@ -4,10 +4,8 @@
 	require('_header.php'); 
 ?><!-- START BODY -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-	<head>
-		<title></title>
-	</head>
+ <html>
+
 	<body>
 		<div class="container">
 			<div class="row">
@@ -22,75 +20,66 @@
 			</div>
 		</div><!-- /.container -->
 		<div class="nocontainer">
-			<!-- <div class="who-we-are">
+			<div class="who-we-are">
 				<div id="ribbon">
 					<h3>
 						Who We Are
 					</h3>
 				</div>
 				<div id="storyCarousel" class="carousel slide">
-					<!== Carousel items
 					<div class="carousel-inner">
 						<div class="active item">
-							<img src="http://farm5.staticflickr.com/4018/4684490158_3b5f5cfca3_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8306/8013620603_2c1428e04e_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									We first came down from Berkeley on June 2010, and planted the church here in Riverside. Here we are with some helpers from Berkeley!
+									Meet Steve and Eunice, who lead Gracepoint Riverside. They serve our church with a zeal to minister to college students. Steve's spirited enthusiasm and Eunice's witty humor are familiar hallmarks of our gatherings. On any given day at Gracepoint, you can find them planning for our church's activities, meeting students on the UC Riverside campus, and welcoming people to their home.
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm7.staticflickr.com/6204/6122902708_8dddc29180_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									Steve and Eunice, the leaders of the Riverside church!
+									Meet the staff of Gracepoint Riverside. We're UC graduates with a passion to serve the college community at UC Riverside, and we started our church with a vision to have an Acts 2 church in every college town.
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm6.staticflickr.com/5007/5266638890_9163d2a1cc_b.jpg" alt="">
+							<img src="http://farm5.staticflickr.com/4141/4773868281_7f436d364d_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									We went back to Berkeley during Thanksgiving break, 2010, for our first church retreat!
+									Within the past two years since we began Gracepoint Riverside, we've grown quite a bit - from this…
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm5.staticflickr.com/4109/5450893573_2c7eee7853_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8147/7689769720_13be9488d6_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									In the past year, we had our first annual community service event, Valentine's Day of Compassion!
+									To this…
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm8.staticflickr.com/7017/6794178105_453dd8706b_b.jpg" alt="">
+							<img src="http://farm8.staticflickr.com/7235/7297806730_0c29dc981a_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									We also held our first baptism service.
+									At Gracepoint, we are committed to learning and living out the truths in the Bible.
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm8.staticflickr.com/7107/6926896438_11719c1fef_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8309/8012768127_ba23e62679_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
-									Here we are during a trip to Yosemite.
+									But at the same time we're serious about having fun and doing life together.
 								</p>
 							</div>
 						</div>
-						<div class="item">
-							<img src="http://farm8.staticflickr.com/7128/7005275096_baec112fbb_b.jpg" alt="">
-							<div class="carousel-caption">
-								<p>
-									Now, our church has grown from twenty members to over sixty members!
-								</p>
-							</div>
-						</div>
-					</div><!== Carousel nav 
+					</div>
 					<a class="carousel-control left" href="#storyCarousel" data-slide="prev">‹</a> <a class="carousel-control right" href="#storyCarousel" data-slide="next">›</a>
 				</div>
-			</div> -->
+			</div>
 			<div class="what-to-expect">
 				<div id="what-to-expectCarousel" class="carousel slide">
 					<h3>

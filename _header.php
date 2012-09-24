@@ -12,7 +12,7 @@
     <meta name="author" content="<?php echo $TITLE; ?>">
 
     <?php if ($DEV_MODE) { ?>
-	    <link href="assets/bootstrap.gracepoint.less" rel="stylesheet/less">	    
+	    <link href="assets/bootstrap.gracepoint.less" rel="stylesheet/less">
     <?php } else { ?>
 	    <link rel="stylesheet" href="assets/bootstrap.gracepoint.css" type="text/css" media="screen" charset="utf-8">
 	<?php } ?>
