@@ -6924,6 +6924,9 @@ small {
   background: url('../img/about-shadow-curve.png') no-repeat center bottom;
   background-size: 100%;
 }
+#about #footer {
+  margin-top: 0;
+}
 @media (max-width: 767px) {
   h2 {
     font-size: 30px;
