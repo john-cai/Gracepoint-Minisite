@@ -97,12 +97,11 @@
 						</div>
 					</div>
 					
-					<div id="gp-biglogo" class="span12">
-					</div>
-					
 				</div> <!-- /.buttons -->
 					
 			</div> <!-- /.row (outer) -->
+			
+			<div class="row"><div id="gp-biglogo" class="span12"></div></div>
 	
 		</div> <!-- /.container -->
 		<!--END BODY -->

@@ -59,7 +59,7 @@
 @import "../less/hero-unit.less";
 
 // Utility classes
-// @import "../less/responsive.less"; // Added in
+@import "../less/responsive.less"; // Added in
 @import "../less/utilities.less"; // Has to be last to override when necessary
 
 // ====================================================================================================
@@ -69,24 +69,18 @@
 @maxwidth: 1020px;
 @bg: #daf6ff url(../img/background.png) top left repeat;
 
-h1 {}
-h2 { font-size: 48px; }
-h3 { font-size: 36px; text-transform: uppercase; margin-bottom: 20px; margin-top: 20px; }
-h4 { font-size: 30px; }
-
-.font-small {
-	font-size: 14px;
-	line-height: 18px;
-}
-
 body { 
 	background: @bg;
 } 
 
-small {
-	.font-small;
-	color: @grayLight;
+h1.visible-phone { 
+	float: left;
+	position: relative;
+	top: -20px;
 }
+h3 { text-transform: uppercase; }
+
+small { color: @grayLight; }
 
 .alert {
 	margin-top: 20px;
@@ -128,10 +122,6 @@ small {
 	background: #eee url(../img/footer.jpg) top left repeat;
 	margin-top: 20px;
 	padding: 40px 0;
-
-	footer {
-		p { .font-small; }
-	}	
 }
 
 // ====================================================================================================
@@ -229,14 +219,10 @@ small {
 #home {
 	h2 { 
 		text-align: center;
-		margin: 40px auto;
 	}
 
-//	p.lead {
-//		.content-columns(2);
-//	}
-	
-	
+	.carousel-inner .item { top: -100px; }
+
 	.buttons a {
 		display: block;
 		.border-radius(5px);
@@ -252,32 +238,21 @@ small {
 	}
 
 	.button {
-		height: 140px;
 		.border-radius(5px);
 		border: 1px solid #666;
 		display: block;
-
 		
 		p { 
-			padding-top: 54px; 
 			color: #fff;
-			font-size: 36px;
 			text-shadow: 0px 2px 2px #000;
 			text-align: center;
 		}
-	}
-	
-	.carousel-inner { 
-		height: 500px; 
-		
-		.item { top: -100px; }
 	}
 	
 	.subtext {
 		margin-top: 10px;
 		
 		p {
-			font-size: 18px;
 			color: #999;
 			margin-left: 35px;	
 		}
@@ -306,7 +281,7 @@ small {
 	#address {
 		.button {
 			border: 1px solid #00507C; 
-			background: url('../img/home-bg-map.jpg') no-repeat -155px -22px;
+			background: url('../img/home-bg-map.jpg') no-repeat top right;
 			.box-shadow(@address-shadow);
 	
 			p div {
@@ -323,7 +298,7 @@ small {
 	#events {
 		.button {
 			border: 1px solid #B36A2A;
-			background: url('../img/home-bg-events.jpg') no-repeat -14px -34px;
+			background: url('../img/home-bg-events.jpg') no-repeat bottom right;
 			.box-shadow(@events-shadow);
 		}
 		.subtext {
@@ -337,10 +312,6 @@ small {
 			border: 1px solid #666;
 			background: url('../img/home-bg-about.jpg') no-repeat -25px -53px;
 			.box-shadow(@learn-shadow);
-	
-			p {
-				padding-top: 58px;
-			}
 		}
 		.subtext {
 			background: url('../img/home-people.png') no-repeat;
@@ -361,9 +332,6 @@ small {
 				margin: 15px 10px;
 				background: url('../img/home-stamp.png') top right no-repeat;
 			}
-	 		p {
-				padding-top: 43px;
-			}
 		}
 		.subtext {
 			background: url('../img/home-mail.png') no-repeat;
@@ -373,75 +341,15 @@ small {
 	#gp-biglogo {
 		background: url('../img/logo-gracepointriverside-big.png') center center no-repeat;
 		height: 130px;
-		margin: 50px 0px 20px 0px;
 	}
 
 }
-
-// ====================================================================================================
-// RESPONSIVE LAYOUTS
-// ====================================================================================================
-
-// UP TO LANDSCAPE PHONE
-// ---------------------
-@media (max-width: 480px) {
-
-}
-
-// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
-// --------------------------------------------------
-/*
-@media (max-width: 767px) {	
-
-	#outer {
-		width: 100%;
-		border: none;
-	}
-
-	#main {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	#footer {
-		padding-left: 20px;
-		padding-right: 20px;		
-	}
-
-	#home {
-		p.lead {
-			.content-columns(1);
-		}
-		
-		img { max-width: 100%; }
-	}
-	
-}
-*/
-
-// PORTRAIT TABLET TO LANDSCAPE TABLET
-// -----------------------------------
-@media (min-width: 768px) and (max-width: 979px) {
-
-}
-
-// DEFAULT DESKTOP
-// ---------------
-@media (min-width: 980px) {
-	#outer {
-		border-left: 1px solid #ccc;
-		border-right: 1px solid #ccc;
-		width: @maxwidth;
-	}
-}
-
 
 // ====================================================================================================
 // TIME + LOCATION PAGE
 // ====================================================================================================
 
 #time-location {
-	.img-polaroid { max-width: 292px; }
 	
 	#helpinfo {
 		.opacity(50);
@@ -453,8 +361,7 @@ small {
 	.info {
 		margin-top: 20px;
 	
-		div { 
-			font-size: 30px; 
+		div {  
 			
 			div { 
 				padding: 7px 7px 7px 40px;
@@ -496,7 +403,6 @@ small {
 			background: url('../img/time-rides-location.png') left top no-repeat;
 
 			.rides-nav { 
-				font-size: 18px;
 				height: 45px;
 				padding-left: 30px;
 				margin-bottom: 5px;
@@ -548,7 +454,6 @@ small {
 	
 	h3, p.lead, footer {
 		color: #666;
-/* 		text-shadow: 0 1px 0 #fff, 0 -1px 0 #333; */
 		text-shadow: 0 1px 0 #fff;
 	}
 
@@ -558,18 +463,10 @@ small {
 		.border-radius(5px);
 		background-color: #fff;
 		
-		.carousel-inner {
-			height: 500px;
-		}
-		
 		img { .border-radius(5px 5px 0px 0px); }
 	
 		.info {
-			padding-top: 40px;
-			padding-bottom: 40px;
-			
 			.date { text-align: right; padding-top: 15px; font-family: @sansFontFamily; }
-			.blurb { padding-top: 30px; }
 		}
 	}
 	
@@ -615,9 +512,6 @@ small {
 	
 	#storyCarousel {
 		margin-top: 1px;
-		.carousel-inner {
-			height: 670px;
-		}
 	}
 	
 	
@@ -640,11 +534,8 @@ small {
 			position: relative;
 			top: -200px;
 			color: #fff;
-			font-size: 100px;
 		}
-		.carousel-inner {
-			height: 670px;
-		}
+
 		#expect-shadow {
 			background: url('../img/about-expect-shadow.png') no-repeat;
 			height: 20px;
@@ -664,25 +555,260 @@ small {
 			.textStyles;
 		}		
 		#innerimage {
-			height: 450px;
-			width: 881px;
 			border: 10px solid #fff;
 			background: #ACACAC;
-			margin: 0 auto;
 			overflow: hidden;
-//			background: url('http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg') -62px -96px;
-			img {
-				position: relative;
-				top: -130px;
-			}
 		}
 		#curve-shadow {
-			background: url('../img/about-shadow-curve.png') no-repeat 0px -90px;
-			height: 75px;
+			background: url('../img/about-shadow-curve.png') no-repeat center bottom;
+			background-size: 100%;
+		}
+	}
+	
+	#footer { margin-top: 0; }
+}
+
+// ====================================================================================================
+// RESPONSIVE LAYOUTS
+// ====================================================================================================
+
+// LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
+// --------------------------------------------------
+@media (max-width: 767px) {	
+
+	h2 { font-size: 30px; }
+	h3 { font-size: 24px; margin: 5px 0; }
+	h4 { font-size: 18px; }
+	
+	.font-small {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	small {
+		.font-small;
+	}
+	#footer footer p { .font-small; }
+	
+	p.lead { font-size: 16px; line-height: 21px; }
+	p, div { font-size: 14px; line-height: 18px; }
+
+	#outer {
+		width: 100%;
+		border: none;
+	}
+	
+	body { background: #fff; }
+
+	#footer {
+		background: none;
+	}
+	
+	#home {
+		.carousel-inner { 
+			height: auto;
+			.item { top: 0; } 
+		}
+		
+		.buttons {
+			div.span4, #learn {
+				float: left;
+				width: 47%;
+				margin-left: 10px;
+			}
+			#learn { margin-top: 0; }
+		}
+		
+		.button {
+			height: 100px;
+			p { font-size: 24px; padding-top: 40px; }
+		}
+		#contact {
+			float: left;
 			width: 100%;
-			position:absolute;
-			top:550px;
-			left:54px;
+			.button p { padding-top: 29px; }
+		}
+
+	}
+	
+	#about {
+		.carousel-inner { height: auto; }
+		
+		.what-to-expect {
+			h4 { font-size: 50px; }
+			#expect-shadow { .hide; }
+		}
+		
+		.joinus {
+			background: none;
+			height: auto;
+			#curve-shadow { background: none; }
+		}
+	}
+	
+	#events {
+		background: @bg;
+	}
+	
+}
+
+// UP TO LANDSCAPE PHONE
+// ---------------------
+@media (max-width: 480px) {
+	h1.visible-phone { 
+		img { 
+			max-width: 50px; 
+			position: relative;
+			top: 10px;
+		}
+	}
+	
+	.navLinks { 
+		font-size: 14px; 
+		margin-left: 4px;
+	}
+	
+	#home {
+		.buttons {
+			.subtext { .hide; }
+			#contact .button #stamp { background: none; }
+			
+			div.span4, #learn, #contact {
+				float: none;
+				width: auto;
+				margin-left: 0;
+				margin-top: 15px;
+			}
+		} 
+	}
+
+}
+
+// PORTRAIT TABLET TO LANDSCAPE TABLET
+// -----------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+	h2 { font-size: 36px; }
+	h3 { font-size: 30px; margin: 10px 0; }
+	h4 { font-size: 24px; }
+	
+	.font-small {
+		font-size: 12px;
+		line-height: 14px;
+	}
+	small {
+		.font-small;
+	}
+	#footer footer p { .font-small; }
+		
+	.carousel-inner { height: 400px; }
+	
+	p.lead { font-size: 18px; line-height: 24px; }
+	p, div { font-size: 16px; line-height: 21px; }
+	
+	#home {
+		h2 { margin: 20px auto; }
+		.button {
+			height: 120px;
+			p { font-size: 30px; padding-top: 50px; }
+		}
+		.subtext p { font-size: 14px; }
+		#learn .button p { padding-top: 54px; }
+		#contact .button p { padding-top: 39px; }
+		#gp-biglogo { margin: 10px 0px; }
+	}
+	
+	#about {
+		.carousel-inner { height: 510px; }
+		
+		.what-to-expect {
+			h4 { font-size: 75px; }
+			#expect-shadow { .hide; }
+		}
+		
+		.joinus {
+			height: 525px;
+			#innerimage { height: 375px; }
+			#curve-shadow { height: 30px; }
+		}
+	}
+
+	#time-location {
+		.img-polaroid { max-width: 220px; }
+		
+		.info div { font-size: 24px; }
+		
+		ul.rides li .rides-nav { font-size: 14px; }
+	}
+	
+	#events {
+		.event .info { 
+			padding: 15px 0; 
+			.blurb { padding-top: 10px; }
 		}
 	}
 }
+
+// DEFAULT DESKTOP
+// ---------------
+@media (min-width: 980px) {
+	h2 { font-size: 48px; }
+	h3 { font-size: 36px; margin: 20px 0; }
+	h4 { font-size: 30px; }
+	
+	.font-small {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	small {
+		.font-small;
+	}
+	#footer footer p { .font-small; }
+	
+	.carousel-inner { height: 500px; }
+	
+	#outer {
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		width: @maxwidth;
+	}
+	
+	#home {
+		h2 { margin: 40px auto; }
+		.button {
+			height: 140px;
+			p { font-size: 36px; padding-top: 54px; }
+		}
+		.subtext p { font-size: 18px; }
+		#learn .button p { padding-top: 58px; }
+		#contact .button p { padding-top: 43px; }
+		#gp-biglogo { margin: 20px 0px; }
+	}
+	
+	#about {
+		.carousel-inner { height: 670px; }
+		
+		.what-to-expect {
+			h4 { font-size: 100px; }
+		}
+		
+		.joinus {
+			#innerimage { height: 450px; }
+			#curve-shadow { height: 35px; }
+		}
+	}
+	
+	#time-location {
+		.img-polaroid { max-width: 292px; }
+		
+		.info div { font-size: 30px; }
+		
+		ul.rides li .rides-nav { font-size: 18px; }
+	}
+	
+	#events {
+		.event .info { 
+			padding: 30px 0; 
+			.blurb { padding-top: 20px; }
+		}
+	}
+}
+

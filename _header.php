@@ -6,13 +6,13 @@
     <meta charset="utf-8">
 	<title><?php echo $TITLE . ' - ' . $PAGE_TITLE; ?></title>
 	<link rel="shortcut icon" href="img/favicon.ico" />
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo $DESCRIPTION; ?>">
     <meta name="keywords" content="<?php echo $KEYWORDS; ?>">
     <meta name="author" content="<?php echo $TITLE; ?>">
 
     <?php if ($DEV_MODE) { ?>
-	    <link href="assets/bootstrap.gracepoint.less" rel="stylesheet/less">	    
+	    <link href="assets/bootstrap.gracepoint.less" rel="stylesheet/less">
     <?php } else { ?>
 	    <link rel="stylesheet" href="assets/bootstrap.gracepoint.css" type="text/css" media="screen" charset="utf-8">
 	<?php } ?>
@@ -37,17 +37,22 @@
 					<div class="row">
 						<div class="span12">
 							<div class="row">
-								<h1 class="span3">
+								<h1 class="span3 hidden-phone">
 									<a class="brand" href="index.php">
 										<img src="img/logo-gracepointriverside.png" alt="<?php echo $TITLE; ?>" />
 									</a>	
 								</h1>
 								
 								<div class="span9">
+									<h1 class="visible-phone">
+										<a class="brand" href="index.php">
+											<img src="img/logo-gracepointriverside-small.jpg" class="img-circle" alt="<?php echo $TITLE; ?>" />
+										</a>
+									</h1>
 									<div class="navLinks">
 										<a id="nav-about" href="aboutus.php">About Us</a>
 										<a id="nav-time-location" href="time-location.php">Time &amp; Location</a>
-										<a id="nav-events" href="events.php">Recent Events</a>
+										<a id="nav-events" href="events.php"><span class="hidden-phone">Recent </span>Events</a>
 									</div>	
 								</div>
 
