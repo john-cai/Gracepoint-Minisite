@@ -2,11 +2,7 @@
 	$PAGE_ID = 'about';
 	$PAGE_TITLE = 'About Us';
 	require('_header.php'); 
-?><!-- START BODY -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
- <html>
-
-	<body>
+?>
 		<div class="container">
 			<div class="row">
 				<div id="video-section" class="span12">
@@ -128,16 +124,24 @@
 				<div id="expect-shadow">
 				</div>
 			</div>
+
 			<div class="joinus">
-				<h3>
-					Come Join Us!
-				</h3>
-				<div id="innerimage">
-					<img src="http://farm6.static.flickr.com/5230/5656013254_95f455e02a_b.jpg" alt="Come join us at Gracepoint Riverside" />
-				</div>
-				<div id="curve-shadow"></div>
-			</div><!--END BODY -->
-			<?php require('_footer.php'); ?>
-		</div>
-	</body>
-</html>
+				<div class="container">
+					<h3>
+						Come Join Us!
+					</h3>
+					<div class="row">
+						<div class="span10 offset1">
+							<div id="innerimage">
+								<img src="http://farm6.static.flickr.com/5230/5656013254_95f455e02a_b.jpg" alt="Come join us at Gracepoint Riverside" />
+							</div>
+							<div id="curve-shadow"></div>
+						</div>
+					</div>
+				</div> <!-- /.container -->
+			</div> 
+
+		</div> <!-- /.nocontainer -->
+
+		<?php require('_footer.php'); ?>
+
