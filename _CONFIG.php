@@ -6,12 +6,18 @@
 	// =================================================================================
 
 	// special announcement message: will be flashed above every page if this isn't null
-	$UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Materials Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
+	// $UPDATE_MSG = "From 9/23 to 10/7, we're holding service on the UCR campus, at the Materials Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
+	$UPDATE_MSG = "This Sunday (10/7), we'll be having our New Student Welcome Event at 2pm and 5pm. It will be held at the Materials Science and Engineering Building (MSE 104). Come join us!";
 
 	$USE_LOCATION_INDEX = 2;				// use the right $LOCATION
 	$USE_RIDES_ARRAY = array(2, 3, 4);		// given the larger array of $RIDES, choose the right pickup spots
+/*
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';
+*/
+	$SERVICE_TIME = '2pm, 5pm';
+	$RIDES_TIME = '1:30pm';
+
 
 	date_default_timezone_set('America/Los_Angeles');
 	$SERVICE_DAY = 7;						// 1 = Monday; 6 = Saturday; 7 = Sunday
