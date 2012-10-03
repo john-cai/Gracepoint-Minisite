@@ -207,6 +207,7 @@
 			});
 			
 			// --#rides_map--
+			<?php if ($RIDES_TIME) { ?>
 			
 			var i = 1;
 			$.each(rides_array, function(index, value) {		// use "value", NOT "index" (confusing, I know)
@@ -238,6 +239,8 @@
 				});
 
 			}); // end $.each()
+			
+			<?php } // end if ($RIDES_TIME) ?>
 
 			<?php } // end if statement ?>
 			

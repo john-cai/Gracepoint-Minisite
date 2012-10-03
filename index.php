@@ -58,7 +58,12 @@
 							</div>
 						</a>
 						<div class="subtext">
-							<p>We also provide rides!</p>
+							<p><?php if ($RIDES_TIME) { ?>
+								We also provide rides!
+								<?php } else { ?>
+								No rides this week!
+								<?php } ?>
+							</p>
 						</div>
 					</div>
 	

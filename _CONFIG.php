@@ -16,7 +16,8 @@
 	$RIDES_TIME = '1:00pm';
 */
 	$SERVICE_TIME = '2pm, 5pm';
-	$RIDES_TIME = '1:30pm';
+/* 	$RIDES_TIME = '1:30pm';					// if null, then entire rides section will not show */
+	$RIDES_TIME = '';
 
 
 	date_default_timezone_set('America/Los_Angeles');

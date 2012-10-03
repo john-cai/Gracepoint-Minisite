@@ -48,9 +48,9 @@
 
 <!-- 			<div id="dirSteps" style="display:none;"></div> -->
 
-			
 			<div class="breaker"></div>
 
+			<?php if ($RIDES_TIME) { ?>
 			<div class="row">
 				<div class="span12"> 
 					<h3>Need a Ride to Church?</h3>
@@ -84,6 +84,11 @@
 
 			</div>
 			
+			<?php } else { ?>
+			
+			<em>Rides won't be provided this week!</em>
+			
+			<?php } ?>
 
 		</div> <!-- /.container -->
 
