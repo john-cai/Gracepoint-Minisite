@@ -6586,6 +6586,10 @@ small {
 #home .carousel-inner .item {
   top: -100px;
 }
+#home .carousel-inner .item.perfectfit {
+  top: 0;
+}
+
 #home .buttons a {
   display: block;
   -webkit-border-radius: 5px;

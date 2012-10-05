@@ -8,7 +8,10 @@
 		
 		<div id="hero" class="carousel slide">
             <div class="carousel-inner">
-              <div class="item active">
+              <div class="item perfectfit active">
+                <img src="http://farm9.staticflickr.com/8029/8055322945_867e69691a_b.jpg" alt="">
+              </div>
+              <div class="item">
                 <img src="http://farm9.staticflickr.com/8174/7983096533_0f3bd868f7_b.jpg" alt="">
               </div>
               <div class="item">

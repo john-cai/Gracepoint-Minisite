@@ -57,7 +57,8 @@
 			'line1' => '5500 Alessandro Blvd',
 			'line2' => 'Riverside, CA 92507',
 			'lat' => 33.95167,
-			'long' => -117.3584
+			'long' => -117.3584,
+			'thumbnail' => 'http://farm9.staticflickr.com/8310/8054169105_79b34c6792_n.jpg'
 		),
 		1 => array(
 			'name' => 'Stratton Community Center',

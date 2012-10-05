@@ -221,7 +221,11 @@ small { color: @grayLight; }
 		text-align: center;
 	}
 
-	.carousel-inner .item { top: -100px; }
+	.carousel-inner .item { 
+		top: -100px; 
+		
+		&.perfectfit { top: 0; }
+	}
 
 	.buttons a {
 		display: block;
