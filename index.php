@@ -48,13 +48,11 @@
 					<div id="address" class="span4">
 						<a href="time-location.php">
 							<div class="button">
-								<p>
-									<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) {
-										echo '<div>' . $LOCATION[$USE_LOCATION_INDEX]['line1'] . '<br />' .  $LOCATION[$USE_LOCATION_INDEX]['line2'] . '</div>'; 
-										}
-										else echo $LOCATION[$USE_LOCATION_INDEX]['name'];
-									?>
-								</p>
+								<?php if ($LOCATION[$USE_LOCATION_INDEX]['line1']) {
+									echo '<p class="small">' . $LOCATION[$USE_LOCATION_INDEX]['line1'] . '<br />' .  $LOCATION[$USE_LOCATION_INDEX]['line2'] . '</p>'; 
+									}
+									else echo '<p>' . $LOCATION[$USE_LOCATION_INDEX]['name'] . '</p>';
+								?>
 							</div>
 						</a>
 						<div class="subtext">

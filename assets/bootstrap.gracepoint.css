@@ -6580,17 +6580,16 @@ small {
   margin: 0px 50px;
 }
 /* Variables */
-#home h2 {
+body#home h2 {
   text-align: center;
 }
-#home .carousel-inner .item {
+body#home .carousel-inner .item {
   top: -100px;
 }
-#home .carousel-inner .item.perfectfit {
+body#home .carousel-inner .item.perfectfit {
   top: 0;
 }
-
-#home .buttons a {
+body#home .buttons a {
   display: block;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -6605,7 +6604,7 @@ small {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-#home .buttons a:hover {
+body#home .buttons a:hover {
   text-decoration: none;
   opacity: 0.99;
   filter: alpha(opacity=99);
@@ -6613,33 +6612,33 @@ small {
   -moz-box-shadow: 0 0 10px #0033cc;
   box-shadow: 0 0 10px #0033cc;
 }
-#home .button {
+body#home .button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #666;
   display: block;
 }
-#home .button p {
+body#home .button p {
   color: #fff;
   text-shadow: 0px 2px 2px #000;
   text-align: center;
 }
-#home .subtext {
+body#home .subtext {
   margin-top: 10px;
 }
-#home .subtext p {
+body#home .subtext p {
   color: #999;
   margin-left: 35px;
 }
-#home #date .button {
+body#home #date .button {
   border: 1px solid #84A65E;
 }
-#home #date .button #clock {
+body#home #date .button #clock {
   height: 100%;
   background: url('../img/home-bg-clock.png') center center no-repeat;
 }
-#home #date .button#gradient {
+body#home #date .button#gradient {
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #b3e5a4;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #b3e5a4;
   box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #b3e5a4;
@@ -6656,73 +6655,73 @@ small {
   border-color: #49b23d #49b23d #327929;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
-#home #date .subtext {
+body#home #date .subtext {
   background: url('../img/home-calendar.png') no-repeat;
 }
-#home #date .subtext p {
+body#home #date .subtext p {
   margin-left: 20px;
 }
-#home #address .button {
+body#home #address .button {
   border: 1px solid #00507C;
   background: url('../img/home-bg-map.jpg') no-repeat top right;
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a3effb;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a3effb;
   box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a3effb;
 }
-#home #address .button p div {
+body#home #address .button p.small {
   padding-top: 42px;
   font-size: 22px;
 }
-#home #address .subtext {
+body#home #address .subtext {
   background: url('../img/home-car.png') no-repeat 0px 4px;
 }
-#home #address .subtext p {
+body#home #address .subtext p {
   margin-left: 45px;
 }
-#home #events .button {
+body#home #events .button {
   border: 1px solid #B36A2A;
   background: url('../img/home-bg-events.jpg') no-repeat bottom right;
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
   box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
 }
-#home #events .subtext {
+body#home #events .subtext {
   background: url('../img/home-photos.png') no-repeat;
 }
-#home #learn {
+body#home #learn {
   margin-top: 22px;
 }
-#home #learn .button {
+body#home #learn .button {
   border: 1px solid #666;
   background: url('../img/home-bg-about.jpg') no-repeat -25px -53px;
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a0a6a0;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a0a6a0;
   box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #a0a6a0;
 }
-#home #learn .subtext {
+body#home #learn .subtext {
   background: url('../img/home-people.png') no-repeat;
 }
-#home #learn .subtext p {
+body#home #learn .subtext p {
   margin-left: 45px;
 }
-#home #contact {
+body#home #contact {
   margin-top: 22px;
 }
-#home #contact .button {
+body#home #contact .button {
   border: 1px solid #aaa;
   background: url('../img/home-bg-newsletter.png') top left repeat-x, url('../img/home-bg-contactus-beige.jpg') top left repeat-x;
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0;
   box-shadow: 0px 2px 2px 0px #c0c0c0;
 }
-#home #contact .button #stamp {
+body#home #contact .button #stamp {
   margin: 15px 10px;
   background: url('../img/home-stamp.png') top right no-repeat;
 }
-#home #contact .subtext {
+body#home #contact .subtext {
   background: url('../img/home-mail.png') no-repeat;
 }
-#home #gp-biglogo {
+body#home #gp-biglogo {
   background: url('../img/logo-gracepointriverside-big.png') center center no-repeat;
   height: 130px;
 }
@@ -6811,18 +6810,18 @@ small {
 #time-location .leaflet-control-attribution {
   display: none;
 }
-#events #outer {
+body#events #outer {
   background: #daf6ff url(../img/background.png) top left repeat;
   border-left: 0px;
   border-right: 0px;
 }
-#events h3,
-#events p.lead,
-#events footer {
+body#events h3,
+body#events p.lead,
+body#events footer {
   color: #666;
   text-shadow: 0 1px 0 #fff;
 }
-#events .event {
+body#events .event {
   margin-bottom: 50px;
   -webkit-box-shadow: 0px 1px 2px rgba(51, 51, 51, 0.25);
   -moz-box-shadow: 0px 1px 2px rgba(51, 51, 51, 0.25);
@@ -6832,17 +6831,17 @@ small {
   border-radius: 5px;
   background-color: #fff;
 }
-#events .event img {
+body#events .event img {
   -webkit-border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
 }
-#events .event .info .date {
+body#events .event .info .date {
   text-align: right;
   padding-top: 15px;
   font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#events #footer {
+body#events #footer {
   background: #daf6ff url(../img/background.png) top left repeat;
   padding-top: 0;
 }
@@ -6973,52 +6972,52 @@ small {
   #footer {
     background: none;
   }
-  #home .carousel-inner {
+  body#home .carousel-inner {
     height: auto;
   }
-  #home .carousel-inner .item {
+  body#home .carousel-inner .item {
     top: 0;
   }
-  #home .buttons div.span4,
-  #home .buttons #learn {
+  body#home .buttons div.span4,
+  body#home .buttons #learn {
     float: left;
     width: 47%;
     margin-left: 10px;
   }
-  #home .buttons #learn {
+  body#home .buttons #learn {
     margin-top: 0;
   }
-  #home .button {
+  body#home .button {
     height: 100px;
   }
-  #home .button p {
+  body#home .button p {
     font-size: 24px;
     padding-top: 40px;
   }
-  #home #contact {
+  body#home #contact {
     float: left;
     width: 100%;
   }
-  #home #contact .button p {
+  body#home #contact .button p {
     padding-top: 29px;
   }
-  #about .carousel-inner {
+  body#about .carousel-inner {
     height: auto;
   }
-  #about .what-to-expect h4 {
+  body#about .what-to-expect h4 {
     font-size: 50px;
   }
-  #about .what-to-expect #expect-shadow {
+  body#about .what-to-expect #expect-shadow {
     display: none;
   }
-  #about .joinus {
+  body#about .joinus {
     background: none;
     height: auto;
   }
-  #about .joinus #curve-shadow {
+  body#about .joinus #curve-shadow {
     background: none;
   }
-  #events {
+  body#events {
     background: #daf6ff url(../img/background.png) top left repeat;
   }
 }
@@ -7032,15 +7031,15 @@ small {
     font-size: 14px;
     margin-left: 4px;
   }
-  #home .buttons .subtext {
+  body#home .buttons .subtext {
     display: none;
   }
-  #home .buttons #contact .button #stamp {
+  body#home .buttons #contact .button #stamp {
     background: none;
   }
-  #home .buttons div.span4,
-  #home .buttons #learn,
-  #home .buttons #contact {
+  body#home .buttons div.span4,
+  body#home .buttons #learn,
+  body#home .buttons #contact {
     float: none;
     width: auto;
     margin-left: 0;
@@ -7082,59 +7081,59 @@ small {
     font-size: 16px;
     line-height: 21px;
   }
-  #home h2 {
+  body#home h2 {
     margin: 20px auto;
   }
-  #home .button {
+  body#home .button {
     height: 120px;
   }
-  #home .button p {
+  body#home .button p {
     font-size: 30px;
     padding-top: 50px;
   }
-  #home .subtext p {
+  body#home .subtext p {
     font-size: 14px;
   }
-  #home #learn .button p {
+  body#home #learn .button p {
     padding-top: 54px;
   }
-  #home #contact .button p {
+  body#home #contact .button p {
     padding-top: 39px;
   }
-  #home #gp-biglogo {
+  body#home #gp-biglogo {
     margin: 10px 0px;
   }
-  #about .carousel-inner {
+  body#about .carousel-inner {
     height: 510px;
   }
-  #about .what-to-expect h4 {
+  body#about .what-to-expect h4 {
     font-size: 75px;
   }
-  #about .what-to-expect #expect-shadow {
+  body#about .what-to-expect #expect-shadow {
     display: none;
   }
-  #about .joinus {
+  body#about .joinus {
     height: 525px;
   }
-  #about .joinus #innerimage {
+  body#about .joinus #innerimage {
     height: 375px;
   }
-  #about .joinus #curve-shadow {
+  body#about .joinus #curve-shadow {
     height: 30px;
   }
-  #time-location .img-polaroid {
+  body#time-location .img-polaroid {
     max-width: 220px;
   }
-  #time-location .info div {
+  body#time-location .info div {
     font-size: 24px;
   }
-  #time-location ul.rides li .rides-nav {
+  body#time-location ul.rides li .rides-nav {
     font-size: 14px;
   }
-  #events .event .info {
+  body#events .event .info {
     padding: 15px 0;
   }
-  #events .event .info .blurb {
+  body#events .event .info .blurb {
     padding-top: 10px;
   }
 }
@@ -7169,53 +7168,53 @@ small {
     border-right: 1px solid #ccc;
     width: 1020px;
   }
-  #home h2 {
+  body#home h2 {
     margin: 40px auto;
   }
-  #home .button {
+  body#home .button {
     height: 140px;
   }
-  #home .button p {
+  body#home .button p {
     font-size: 36px;
     padding-top: 54px;
   }
-  #home .subtext p {
+  body#home .subtext p {
     font-size: 18px;
   }
-  #home #learn .button p {
+  body#home #learn .button p {
     padding-top: 58px;
   }
-  #home #contact .button p {
+  body#home #contact .button p {
     padding-top: 43px;
   }
-  #home #gp-biglogo {
+  body#home #gp-biglogo {
     margin: 20px 0px;
   }
-  #about .carousel-inner {
+  body#about .carousel-inner {
     height: 670px;
   }
-  #about .what-to-expect h4 {
+  body#about .what-to-expect h4 {
     font-size: 100px;
   }
-  #about .joinus #innerimage {
+  body#about .joinus #innerimage {
     height: 450px;
   }
-  #about .joinus #curve-shadow {
+  body#about .joinus #curve-shadow {
     height: 35px;
   }
-  #time-location .img-polaroid {
+  body#time-location .img-polaroid {
     max-width: 292px;
   }
-  #time-location .info div {
+  body#time-location .info div {
     font-size: 30px;
   }
-  #time-location ul.rides li .rides-nav {
+  body#time-location ul.rides li .rides-nav {
     font-size: 18px;
   }
-  #events .event .info {
+  body#events .event .info {
     padding: 30px 0;
   }
-  #events .event .info .blurb {
+  body#events .event .info .blurb {
     padding-top: 20px;
   }
 }
