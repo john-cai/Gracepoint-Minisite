@@ -50,9 +50,9 @@
 										</a>
 									</h1>
 									<div class="navLinks">
-										<a id="nav-about" href="aboutus.php">About Us</a>
-										<a id="nav-time-location" href="time-location.php">Time &amp; Location</a>
-										<a id="nav-events" href="events.php"><span class="hidden-phone">Recent </span>Events</a>
+										<a id="nav-about" <?php if ($PAGE_ID == 'about') { ?>class="active"<?php } ?> href="aboutus.php">About Us</a>
+										<a id="nav-time-location" <?php if ($PAGE_ID == 'time-location') { ?>class="active"<?php } ?>href="time-location.php">Time &amp; Location</a>
+										<a id="nav-events" <?php if ($PAGE_ID == 'events') { ?>class="active"<?php } ?>href="events.php"><span class="hidden-phone">Recent </span>Events</a>
 									</div>	
 								</div>
 

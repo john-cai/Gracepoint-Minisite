@@ -139,21 +139,21 @@ small { color: @grayLight; }
 @events-color: #65BE2A;
 
 #about #nav-bar {
-	a#nav-about {
+	a.active {
 		border-bottom: 3px solid @about-color;
 		color: @about-color;
 	}
 }
 
 #time-location #nav-bar {
-	a#nav-time-location {
+	a.active {
 		border-bottom: 3px solid @time-color;
 		color: @time-color;
 	}
 }
 
 #events #nav-bar {
-	a#nav-events {
+	a.active {
 		border-bottom: 3px solid @events-color;
 		color: @events-color;
 	}
@@ -580,6 +580,15 @@ body#events {
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------
 @media (max-width: 767px) {	
+	#height-restriction {
+		height: 85px;
+	}
+
+	#home, #about, #time-location, #events {
+		#nav-bar {
+			a.active, #border { border-bottom-width: 0; }
+		}
+	}
 
 	h1.visible-phone { 
 		img { 
@@ -722,6 +731,7 @@ body#events {
 		}
 		.subtext p { font-size: 14px; }
 
+		#address .button p.small { font-size: 21px;	}
 		#learn .button p { padding-top: 54px; }
 		#contact .button p { padding-top: 39px; }
 		#gp-biglogo { margin: 10px 0px; }

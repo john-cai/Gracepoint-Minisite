@@ -6530,15 +6530,15 @@ small {
 #home #nav-bar #border {
   border-bottom-width: 0;
 }
-#about #nav-bar a#nav-about {
+#about #nav-bar a.active {
   border-bottom: 3px solid #ee9f74;
   color: #ee9f74;
 }
-#time-location #nav-bar a#nav-time-location {
+#time-location #nav-bar a.active {
   border-bottom: 3px solid #5ea5e0;
   color: #5ea5e0;
 }
-#events #nav-bar a#nav-events {
+#events #nav-bar a.active {
   border-bottom: 3px solid #65be2a;
   color: #65be2a;
 }
@@ -6939,6 +6939,19 @@ body#events #footer {
   margin-top: 0;
 }
 @media (max-width: 767px) {
+  #height-restriction {
+    height: 85px;
+  }
+  #home #nav-bar a.active,
+  #about #nav-bar a.active,
+  #time-location #nav-bar a.active,
+  #events #nav-bar a.active,
+  #home #nav-bar #border,
+  #about #nav-bar #border,
+  #time-location #nav-bar #border,
+  #events #nav-bar #border {
+    border-bottom-width: 0;
+  }
   h1.visible-phone img {
     max-width: 50px;
     position: relative;
@@ -7107,6 +7120,9 @@ body#events #footer {
   }
   body#home .subtext p {
     font-size: 14px;
+  }
+  body#home #address .button p.small {
+    font-size: 21px;
   }
   body#home #learn .button p {
     padding-top: 54px;
