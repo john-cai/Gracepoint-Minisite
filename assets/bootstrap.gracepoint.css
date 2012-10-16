@@ -6477,6 +6477,14 @@ h1.visible-phone {
 h3 {
   text-transform: uppercase;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
 small {
   color: #999999;
 }
@@ -6931,8 +6939,13 @@ body#events #footer {
   margin-top: 0;
 }
 @media (max-width: 767px) {
+  h1.visible-phone img {
+    max-width: 50px;
+    position: relative;
+    top: 10px;
+  }
   h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
   h3 {
     font-size: 24px;
@@ -6994,6 +7007,10 @@ body#events #footer {
     font-size: 24px;
     padding-top: 40px;
   }
+  body#home #address .button p.small {
+    padding-top: 30px;
+    font-size: 18px;
+  }
   body#home #contact {
     float: left;
     width: 100%;
@@ -7022,14 +7039,11 @@ body#events #footer {
   }
 }
 @media (max-width: 480px) {
-  h1.visible-phone img {
-    max-width: 50px;
-    position: relative;
-    top: 10px;
-  }
   .navLinks {
-    font-size: 14px;
-    margin-left: 4px;
+    font-size: 12px;
+  }
+  .navLinks a {
+    margin-left: 12px;
   }
   body#home .buttons .subtext {
     display: none;
