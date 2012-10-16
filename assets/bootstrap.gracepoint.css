@@ -7050,6 +7050,17 @@ body#events #footer {
   body#events {
     background: #daf6ff url(../img/background.png) top left repeat;
   }
+  body#events .event .info .date {
+    padding-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  body#events .event .info h4,
+  body#events .event .info .date,
+  body#events .event .info .blurb {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 @media (max-width: 480px) {
   .navLinks {

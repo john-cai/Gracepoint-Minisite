@@ -4,7 +4,7 @@
 			<div class="row">
 				<div id="main" class="span12 clearfix">
 					<h3>Sharing Memories</h3>
-					<p class="lead">At Gracepoint, church is more than something you attend once a week on Sunday. We believe in living out the spiritual community modeled for us in Acts 2:42, who "devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers." What does this look like? It's a place to learn about God, grow spiritually and ask questions. It's building long-lasting relationships and sharing meals in each others' homes. Here's a glimpse at what we’ve been up to.</p>
+					<p class="lead">At Gracepoint, church is more than something you attend once a week on Sunday. We believe in living out the spiritual community modeled for us in Acts 2:42, who "devoted themselves to the apostles' teaching and the fellowship, to the breaking of bread and the prayers." <span class="hidden-phone">What does this look like? It's a place to learn about God, grow spiritually and ask questions. It's building long-lasting relationships and sharing meals in each others' homes. Here's a glimpse at what we’ve been up to.</span></p>
 					
 			{foreach $events as $event}
 					<!-- Begin .event -->
