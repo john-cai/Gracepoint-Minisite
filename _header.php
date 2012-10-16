@@ -67,7 +67,7 @@
 	<?php if ($UPDATE_MSG) { ?>
 		<div class="container">
 			<div class="alert alert-success">
-				<strong>Special Announcement:</strong> <?php echo $UPDATE_MSG; ?>
+				<strong class="hidden-phone">Special Announcement:</strong> <?php echo $UPDATE_MSG; ?>
 			</div> <!-- /.alert -->
 		</div>
 	<?php } ?>
