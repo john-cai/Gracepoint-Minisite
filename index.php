@@ -6,21 +6,23 @@
 
 		<!-- START BODY -->
 		
-		<div id="hero" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="item active">
+		<div id="hero" class="flexslider">
+            <ul class="slides">
+              <li>
                 <img src="http://farm9.staticflickr.com/8174/7983096533_0f3bd868f7_b.jpg" alt="">
-              </div>
-              <div class="item">
+              </li>
+              <li>
                 <img src="http://farm8.staticflickr.com/7121/7689743550_868edcd791_b.jpg" alt="">
-              </div>
-              <div class="item">
+              </li>
+              <li>
                 <img src="http://farm6.staticflickr.com/5328/6939445374_4ec92ccd41_b.jpg" alt="">
-              </div>
-            </div>
+              </li>
+            </ul>
+<!--
             <a class="left carousel-control" href="#hero" data-slide="prev">&lsaquo;</a>
             <a class="right carousel-control" href="#hero" data-slide="next">&rsaquo;</a>
-        </div> <!-- /.carousel -->
+-->
+        </div> <!-- /.flexslider -->
 	
 		<div class="container">
 			<div class="row">

@@ -222,7 +222,8 @@ body#home {
 		text-align: center;
 	}
 
-	.carousel-inner .item { 
+	.slides li { 
+		position: relative;
 		top: -100px; 
 		
 		&.perfectfit { top: 0; }
@@ -626,9 +627,9 @@ body#events {
 	}
 	
 	body#home {
-		.carousel-inner { 
+		.slides { 
 			height: auto;
-			.item { top: 0; } 
+			li { top: 0; } 
 		}
 		
 		.buttons {
@@ -730,7 +731,7 @@ body#events {
 	}
 	#footer footer p { .font-small; }
 		
-	.carousel-inner { height: 400px; }
+	.carousel-inner, .flex-viewport { height: 400px; }
 	
 	p.lead { font-size: 18px; line-height: 24px; }
 	p, div { font-size: 16px; line-height: 21px; }
@@ -796,7 +797,7 @@ body#events {
 	}
 	#footer footer p { .font-small; }
 	
-	.carousel-inner { height: 500px; }
+	.carousel-inner, .flex-viewport { height: 500px; }
 	
 	#outer {
 		border-left: 1px solid #ccc;

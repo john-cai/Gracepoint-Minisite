@@ -11,6 +11,7 @@
     <meta name="keywords" content="<?php echo $KEYWORDS; ?>">
     <meta name="author" content="<?php echo $TITLE; ?>">
 
+    <link rel="stylesheet" href="js/flexslider.css" type="text/css" media="screen" charset="utf-8">
     <?php if ($DEV_MODE) { ?>
 	    <link href="assets/bootstrap.gracepoint.less" rel="stylesheet/less">
     <?php } else { ?>

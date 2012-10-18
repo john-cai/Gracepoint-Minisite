@@ -73,7 +73,8 @@
 	<script src="js/bootstrap-tooltip.js" type="text/javascript"></script>
 	<script src="js/bootstrap-popover.js" type="text/javascript"></script>
 	<script src="js/bootstrap-transition.js" type="text/javascript"></script>
-	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+<!-- 	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script> -->
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
 	
 	<script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=<?php echo $GMAPS_KEY; ?>&sensor=false">
@@ -87,6 +88,9 @@
 		$(function() {
 			$('.video').fitVids();
 			$('.carousel').carousel();
+			$('.flexslider').flexslider({
+				animation: "slide"
+			});
 
 			/*$("#getDir").click(function () {
 				$("#mapError").show("slide", { direction: "down" }, 300);
