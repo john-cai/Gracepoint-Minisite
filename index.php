@@ -8,6 +8,9 @@
 		
 		<div id="hero" class="flexslider">
             <ul class="slides">
+				<li class="perfectfit">
+					<iframe src="http://player.vimeo.com/video/51695756" width="1024" height="500" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				</li>
               <li>
                 <img src="http://farm9.staticflickr.com/8174/7983096533_0f3bd868f7_b.jpg" alt="">
               </li>
