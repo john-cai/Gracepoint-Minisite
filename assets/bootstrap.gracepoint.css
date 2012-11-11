@@ -6591,10 +6591,11 @@ small {
 body#home h2 {
   text-align: center;
 }
-body#home .carousel-inner .item {
+body#home .slides li {
+  position: relative;
   top: -100px;
 }
-body#home .carousel-inner .item.perfectfit {
+body#home .slides li.perfectfit {
   top: 0;
 }
 body#home .buttons a {
@@ -6688,7 +6689,7 @@ body#home #address .subtext p {
 }
 body#home #events .button {
   border: 1px solid #B36A2A;
-  background: url('../img/home-bg-events.jpg') no-repeat bottom right;
+  background: url('../img/home-bg-events.jpg') no-repeat center right;
   -webkit-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
   -moz-box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
   box-shadow: 0px 2px 2px 0px #c0c0c0, inset 0px 1px 0px 0px #bfbfbf;
@@ -6998,10 +6999,10 @@ body#events #footer {
   #footer {
     background: none;
   }
-  body#home .carousel-inner {
+  body#home .slides {
     height: auto;
   }
-  body#home .carousel-inner .item {
+  body#home .slides li {
     top: 0;
   }
   body#home .buttons div.span4,
@@ -7107,7 +7108,8 @@ body#events #footer {
     font-size: 12px;
     line-height: 14px;
   }
-  .carousel-inner {
+  .carousel-inner,
+  .flex-viewport {
     height: 400px;
   }
   p.lead {
@@ -7201,7 +7203,8 @@ body#events #footer {
     font-size: 14px;
     line-height: 18px;
   }
-  .carousel-inner {
+  .carousel-inner,
+  .flex-viewport {
     height: 500px;
   }
   #outer {
