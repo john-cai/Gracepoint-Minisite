@@ -65,7 +65,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm9.staticflickr.com/8309/8012768127_ba23e62679_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8350/8238906464_53bb8b92ca_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
 									But at the same time we're serious about having fun and doing life together.
