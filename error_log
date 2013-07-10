@@ -1,3 +1,0 @@
-[12-Sep-2012 18:05:41] PHP Parse error:  syntax error, unexpected '[' in /home/gpriver/public_html/dev/CONFIG.php on line 11
-[12-Sep-2012 18:06:39] PHP Parse error:  syntax error, unexpected T_ARRAY, expecting T_STRING or T_VARIABLE or '$' in /home/gpriver/public_html/dev/CONFIG.php on line 22
-[12-Sep-2012 18:06:54] PHP Parse error:  syntax error, unexpected '[' in /home/gpriver/public_html/dev/CONFIG.php on line 34
