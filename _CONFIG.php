@@ -6,11 +6,16 @@
 	// =================================================================================
 
 	// special announcement message: will be flashed above every page if this isn't null
-	// $UPDATE_MSG = "This Sunday, we'll be holding our service on the UCR campus, at the Materials Science and Engineering Building (MSE 104)! More info about it <a href=\"time-location.php\">here</a>. ";
-	// $UPDATE_MSG = "This Sunday (10/7), we'll be having our New Student Welcome Event at 2pm and 5pm. It will be held at the Materials Science and Engineering Building (MSE 104). Come join us!";
+	// $UPDATE_MSG = "We won't be meeting this week, as many of us will be away at the Gracepoint Summer Rally.";
+	// $UPDATE_MSG = "We'll be having our Sunday Service at the Materials Science and Engineering Building (MSE 104). Come join us!";
 
 	$USE_LOCATION_INDEX = 0;				// use the right $LOCATION
+//	$USE_RIDES_ARRAY = array(2, 3, 4);
 	$USE_RIDES_ARRAY = array(0, 1, 2, 3, 4);		// given the larger array of $RIDES, choose the right pickup spots
+
+
+//	$SERVICE_TIME = 'No service this week!';
+//	$RIDES_TIME = '4:300pm';
 
 	$SERVICE_TIME = '1:30pm';
 	$RIDES_TIME = '1:00pm';					// if null, then entire rides section will not show
@@ -70,6 +75,13 @@
 			'long' => -117.327343,
 			'thumbnail' => 'http://farm9.staticflickr.com/8039/8013663868_f89a4885dc_n.jpg',
 			'helpinfo' => 'Located near AI and the Rec. <br />For parking, please park on Linden or Canyon Crest.'
+		),
+		3 => array(
+			'name' => 'Hackamore',
+			'line1' => '',
+			'line2' => 'Riverside, CA 92506',
+			'lat' => 33.942054,
+			'long' => -117.355668
 		)
 	);
 	
