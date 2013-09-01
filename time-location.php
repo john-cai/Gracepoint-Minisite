@@ -53,6 +53,7 @@
 			<?php if ($RIDES_TIME) { ?>
 			<div class="row">
 				<div class="span12"> 
+					<a name="rides"></a>
 					<h3>Need a Ride to Church?</h3>
 					<p class="lead">We've got you covered! We provide rides to church from the UCR dorms and elsewhere near campus. All rides will be leaving at <span class="label label-warning"><?php echo $RIDES_TIME; ?></span> from these locations:</p>
 				</div>
