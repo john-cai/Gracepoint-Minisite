@@ -8,23 +8,16 @@
 		
 		<div id="hero" class="flexslider">
             <ul class="slides">
-				<!-- <li class="perfectfit">
-					<iframe id="player_1" src="http://player.vimeo.com/video/51695756?api=1&player_id=player_1" width="1024" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-				</li> -->
               <li>
-                <img src="http://farm9.staticflickr.com/8174/7983096533_0f3bd868f7_b.jpg" alt="">
+                <img src="http://farm8.staticflickr.com/7419/8724408209_d24d95fa3e_b.jpg" alt="">
               </li>
               <li>
                 <img src="http://farm8.staticflickr.com/7121/7689743550_868edcd791_b.jpg" alt="">
               </li>
               <li>
-                <img src="http://farm6.staticflickr.com/5328/6939445374_4ec92ccd41_b.jpg" alt="">
+                <img src="http://farm3.staticflickr.com/2845/9290789532_38307ca9e3_b.jpg" alt="">
               </li>
             </ul>
-<!--
-            <a class="left carousel-control" href="#hero" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#hero" data-slide="next">&rsaquo;</a>
--->
         </div> <!-- /.flexslider -->
 	
 		<div class="container">

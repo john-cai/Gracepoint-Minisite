@@ -33,7 +33,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm9.staticflickr.com/8435/8009651046_6547b74d85_b.jpg" alt="">
+							<img src="http://farm8.staticflickr.com/7281/9185223455_0e32db010c_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
 									Meet the staff of Gracepoint Riverside. We're UC graduates with a passion to serve the college community at UC Riverside, and we started our church with a vision to have an Acts 2 church in every college town.
@@ -57,7 +57,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<img src="http://farm8.staticflickr.com/7235/7297806730_0c29dc981a_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8128/8711654641_8f0369210b_b.jpg" alt="">
 							<div class="carousel-caption">
 								<p>
 									At Gracepoint, we are committed to learning and living out the truths in the Bible.
@@ -83,7 +83,7 @@
 					</h3>
 					<div class="carousel-inner">
 						<div class="active item">
-							<img src="http://farm7.staticflickr.com/6121/6202249861_b1dd0ccf44_b.jpg" alt="">
+							<img src="http://farm4.staticflickr.com/3674/9640116211_b4b82f8f52_b.jpg" alt="">
 							<h4>
 								Messages
 							</h4>
@@ -101,19 +101,19 @@
 							</h4>
 						</div>
 						<div class="item">
-							<img src="http://farm8.staticflickr.com/7174/6699146347_9763540620_b.jpg" alt="">
+							<img src="http://farm8.staticflickr.com/7418/8932895241_e840cd6b50_b.jpg" alt="">
 							<h4>
 								Fun
 							</h4>
 						</div>
 						<div class=" item">
-							<img src="http://farm7.staticflickr.com/6095/6275463544_4f1a113bee_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8546/8629200293_32a9f6fea3_b.jpg" alt="">
 							<h4>
 								Sports
 							</h4>
 						</div>
 						<div class="item">
-							<img src="http://farm7.staticflickr.com/6060/6379451775_5b5f7e6fde_b.jpg" alt="">
+							<img src="http://farm9.staticflickr.com/8266/8860332642_3df6fefab9_b.jpg" alt="">
 							<h4>
 								Outings
 							</h4>
@@ -133,7 +133,7 @@
 					<div class="row">
 						<div class="span10 offset1">
 							<div id="innerimage">
-								<img src="http://farm6.static.flickr.com/5230/5656013254_95f455e02a_b.jpg" alt="Come join us at Gracepoint Riverside" />
+								<img src="http://farm3.staticflickr.com/2866/8860258633_811dd5901b_b.jpg" alt="Come join us at Gracepoint Riverside" />
 							</div>
 							<div id="curve-shadow"></div>
 						</div>
