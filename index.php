@@ -12,7 +12,7 @@
                 <img src="https://farm9.staticflickr.com/8592/15708639544_c4a6dec9b0_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="https://farm8.staticflickr.com/7540/15797448136_9e9c69790e_k_d.jpg" alt="">
+                <img src="http://farm9.staticflickr.com/8128/8711654641_8f0369210b_b.jpg" alt="">
               </li>
               <li>
                 <img src="http://farm8.staticflickr.com/7418/8932895241_e840cd6b50_b.jpg" alt="">
