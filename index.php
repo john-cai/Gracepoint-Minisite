@@ -9,13 +9,16 @@
 		<div id="hero" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="http://farm8.staticflickr.com/7419/8724408209_d24d95fa3e_b.jpg" alt="">
+                <img src="https://farm8.staticflickr.com/7559/15416763104_aa259bc7e3_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="http://farm8.staticflickr.com/7121/7689743550_868edcd791_b.jpg" alt="">
+                <img src="https://farm8.staticflickr.com/7577/16144880309_98a7a20da5_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="http://farm3.staticflickr.com/2845/9290789532_38307ca9e3_b.jpg" alt="">
+                <img src="https://farm8.staticflickr.com/7463/15798725626_fbd46d69a2_k_d.jpg" alt="">
+              </li>
+              <li>
+                <img src="https://farm9.staticflickr.com/8584/15256453994_cf3d4e6517_k_d.jpg" alt="">
               </li>
             </ul>
         </div> <!-- /.flexslider -->
