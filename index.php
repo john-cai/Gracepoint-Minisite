@@ -9,13 +9,16 @@
 		<div id="hero" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="https://farm8.staticflickr.com/7559/15416763104_aa259bc7e3_k_d.jpg" alt="">
+                <img src="https://farm9.staticflickr.com/8592/15708639544_c4a6dec9b0_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="https://farm8.staticflickr.com/7577/16144880309_98a7a20da5_k_d.jpg" alt="">
+                <img src="http://farm9.staticflickr.com/8128/8711654641_8f0369210b_b.jpg" alt="">
               </li>
               <li>
-                <img src="https://farm8.staticflickr.com/7463/15798725626_fbd46d69a2_k_d.jpg" alt="">
+                <img src="http://farm8.staticflickr.com/7418/8932895241_e840cd6b50_b.jpg" alt="">
+              </li>              
+              <li>
+                <img src="https://farm8.staticflickr.com/7463/15798725626_fbd46d69a2_k_d.jpg	" alt="">
               </li>
               <li>
                 <img src="https://farm9.staticflickr.com/8584/15256453994_cf3d4e6517_k_d.jpg" alt="">
