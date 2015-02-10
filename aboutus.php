@@ -133,7 +133,7 @@
 					<div class="row">
 						<div class="span10 offset1">
 							<div id="innerimage">
-								<img src="http://farm3.staticflickr.com/2866/8860258633_811dd5901b_b.jpg" alt="Come join us at Gracepoint Riverside" />
+								<img src="https://farm4.staticflickr.com/3849/15249864472_bc19a683a7_k_d.jpg" alt="Come join us at Gracepoint Riverside" />
 							</div>
 							<div id="curve-shadow"></div>
 						</div>
