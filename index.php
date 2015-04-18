@@ -9,19 +9,19 @@
 		<div id="hero" class="flexslider">
             <ul class="slides">
               <li>
-                <img src="https://farm9.staticflickr.com/8592/15708639544_c4a6dec9b0_k_d.jpg" alt="">
+                <img src="https://farm8.staticflickr.com/7720/16887758899_dd4bcf8272_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="https://farm8.staticflickr.com/7540/15797448136_9e9c69790e_k_d.jpg" alt="">
+                <img src="https://farm9.staticflickr.com/8734/16750352327_644bf78e29_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="http://farm8.staticflickr.com/7418/8932895241_e840cd6b50_b.jpg" alt="">
+                <img src="https://farm9.staticflickr.com/8750/16549956534_e092d932c8_k_d.jpg" alt="">
               </li>              
               <li>
-                <img src="https://farm8.staticflickr.com/7463/15798725626_fbd46d69a2_k_d.jpg	" alt="">
+                <img src="https://farm8.staticflickr.com/7719/17153959705_81102303d1_k_d.jpg" alt="">
               </li>
               <li>
-                <img src="https://farm9.staticflickr.com/8584/15256453994_cf3d4e6517_k_d.jpg" alt="">
+                <img src="https://farm9.staticflickr.com/8778/17130079421_a6eeda4ebe_k_d.jpg" alt="">
               </li>
             </ul>
         </div> <!-- /.flexslider -->
