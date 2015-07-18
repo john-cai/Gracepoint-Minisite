@@ -752,7 +752,7 @@ a:hover {
 }
 .container {
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 40px;
   *zoom: 1;
 }
 .container:before,
@@ -7210,7 +7210,7 @@ body#events #footer {
   #outer {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
-    width: 1020px;
+    /*width: 1020px;*/
   }
   body#home h2 {
     margin: 40px auto;

@@ -6,7 +6,7 @@
 	// =================================================================================
 
 	// special announcement message: will be flashed above every page if this isn't null
-	$UPDATE_MSG = "This week our service time will be at 1:30pm!";
+//	$UPDATE_MSG = "This week our service time will be at 1:30pm!";
 	// $UPDATE_MSG = "Over summer, we'll be doing ride pickups <a href=\"time-location.php#rides\">in front of AI, Lot 26, and Blaine Starbucks</a>.";
 	// $UPDATE_MSG = "We'll be having our Sunday Service at the Materials Science and Engineering Building (MSE 104). Come join us!";
 
