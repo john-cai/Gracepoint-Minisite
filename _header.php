@@ -40,7 +40,7 @@
 							<div class="row">
 								<h1 class="span3 hidden-phone">
 									<a class="brand" href="index.php">
-										<img src="img/logo-gracepointriverside.png" alt="<?php echo $TITLE; ?>" />
+										<img src="img/Gracepoint.png" alt="<?php echo $TITLE; ?>" />
 									</a>	
 								</h1>
 								
