@@ -752,7 +752,7 @@ a:hover {
 }
 .container {
   margin-right: auto;
-  margin-left: 40px;
+  margin-left: auto;
   *zoom: 1;
 }
 .container:before,
@@ -6526,6 +6526,8 @@ small {
 }
 #height-restriction {
   height: 100px;
+  background: #023D5D;
+  width: auto;
 }
 #home #nav-bar #border {
   border-bottom-width: 0;
