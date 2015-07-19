@@ -6571,20 +6571,20 @@ small {
   text-align: right;
 }
 .navLinks a {
-  color: #222;
+  color: #ffffff;
   margin-left: 20px;
 }
 .navLinks a:hover {
   text-decoration: none;
 }
 .navLinks a#nav-about:hover {
-  color: #ee9f74;
+  color: #00B9B9;
 }
 .navLinks a#nav-time-location:hover {
-  color: #5ea5e0;
+  color: #00B9B9;
 }
 .navLinks a#nav-events:hover {
-  color: #65be2a;
+  color: #00B9B9;
 }
 #locate {
   margin: 0px 50px;
